@@ -1,6 +1,7 @@
 package me.neo.atomicraft;
 
 import com.mojang.logging.LogUtils;
+import me.neo.atomicraft.datagen.client.registries.BlockRenderTypeRegistry;
 import me.neo.atomicraft.init.BlockInit;
 import me.neo.atomicraft.init.ItemInit;
 import net.minecraft.client.Minecraft;
@@ -35,8 +36,6 @@ public class AtomiCraft {
 
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
-
-
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

@@ -1,5 +1,6 @@
 package me.neo.atomicraft.datagen;
 
+import me.neo.atomicraft.init.BlockInit;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -10,6 +11,6 @@ public class LanguageGen extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-
+        add(BlockInit.CTM_TRANSPARENCY_TEST.get(), "Transparency Test");
     }
 }

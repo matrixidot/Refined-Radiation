@@ -26,7 +26,6 @@ public class LootTableGen extends LootTableProvider {
         super(gen);
     }
 
-
     @Override
     protected List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>> getTables() {
         return loot_tables;

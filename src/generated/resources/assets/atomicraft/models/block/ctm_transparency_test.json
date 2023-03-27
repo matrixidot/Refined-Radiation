@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "atomicraft:block/ctm_transparency_test"
+  }
+}
