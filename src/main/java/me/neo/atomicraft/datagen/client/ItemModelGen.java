@@ -16,6 +16,7 @@ public class ItemModelGen extends ItemModelProvider {
     @Override
     protected void registerModels() {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
+        withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

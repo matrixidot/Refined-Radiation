@@ -12,6 +12,7 @@ public class BlockStateGen extends BlockStateProvider {
     }
     @Override
     protected void registerStatesAndModels() {
-
+        simpleBlock(BlockInit.REINFORCED_CONCRETE.get());
+        simpleBlock(BlockInit.CTM_TRANSPARENCY_TEST.get());
     }
 }

@@ -1,3 +1,6 @@
 {
-  "block.atomicraft.ctm_transparency_test": "Transparency Test"
+  "block.atomicraft.ctm_transparency_test": "Transparency Test",
+  "block.atomicraft.reinforced_concrete": "Reinforced Concrete",
+  "death.attack.atomicraft_radiation_poisoning": "%1$s was killed by radiation poisoning",
+  "effect.atomicraft.radiation_poisoning": "Radiation Poisoning"
 }

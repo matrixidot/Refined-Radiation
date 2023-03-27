@@ -1,0 +1,10 @@
+{
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "layer":"CUTOUT",
+        "textures":[
+            "atomicraft:block/reinforced_concrete_ctm"
+        ]
+    }
+}

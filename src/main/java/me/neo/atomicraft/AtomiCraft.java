@@ -3,8 +3,10 @@ package me.neo.atomicraft;
 import com.mojang.logging.LogUtils;
 import me.neo.atomicraft.datagen.client.registries.BlockRenderTypeRegistry;
 import me.neo.atomicraft.init.BlockInit;
+import me.neo.atomicraft.init.EffectInit;
 import me.neo.atomicraft.init.ItemInit;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -30,12 +32,12 @@ import org.slf4j.Logger;
 public class AtomiCraft {
     public static final String MOD_ID = "atomicraft";
     private static final Logger LOGGER = LogUtils.getLogger();
-
     public AtomiCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
+        EffectInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
