@@ -2,5 +2,10 @@
   "block.atomicraft.ctm_transparency_test": "Transparency Test",
   "block.atomicraft.reinforced_concrete": "Reinforced Concrete",
   "death.attack.atomicraft_radiation_poisoning": "%1$s was killed by radiation poisoning",
-  "effect.atomicraft.radiation_poisoning": "Radiation Poisoning"
+  "effect.atomicraft.radiation_poisoning": "Radiation Poisoning",
+  "item.atomicraft.burned_potato": "Burned Potato",
+  "item.atomicraft.kelp_dust": "Kelp Dust",
+  "item.atomicraft.pestle_and_mortar": "Pestle and Mortar",
+  "item.atomicraft.potash": "Potash",
+  "item.atomicraft.potassium_iodide_pill": "Potassium Iodide Pill"
 }

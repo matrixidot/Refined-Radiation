@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -32,6 +33,11 @@ import org.slf4j.Logger;
 public class AtomiCraft {
     public static final String MOD_ID = "atomicraft";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    @SubscribeEvent
+    public void pickupItem(EntityItemPickupEvent event) {
+        System.out.println("Item picked up!");
+    }
     public AtomiCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

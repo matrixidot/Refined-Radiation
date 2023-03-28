@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": {
+      "item": "minecraft:andesite_slab"
+    },
+    "W": {
+      "item": "minecraft:andesite_wall"
+    }
+  },
+  "pattern": [
+    " W ",
+    "S S",
+    " S "
+  ],
+  "result": {
+    "item": "atomicraft:pestle_and_mortar"
+  }
+}

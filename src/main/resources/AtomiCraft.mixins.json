@@ -5,8 +5,11 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "atomicraft.refmap.json",
   "mixins": [
+    "NauseaMixin",
+    "oPortalTimeMixin"
   ],
   "client": [
+
   ],
   "injectors": {
     "defaultRequire": 1

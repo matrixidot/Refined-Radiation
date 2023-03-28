@@ -17,6 +17,13 @@ public class ItemModelGen extends ItemModelProvider {
     protected void registerModels() {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
         withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
+
+        ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
+        builder(itemGenerated, "burned_potato");
+        builder(itemGenerated, "potash");
+        builder(itemGenerated, "kelp_dust");
+        builder(itemGenerated, "potassium_iodide_pill");
+        builder(itemGenerated, "pestle_and_mortar");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
