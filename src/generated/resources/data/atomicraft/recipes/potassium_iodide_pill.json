@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "atomicraft:potassium_dust"
+    },
+    {
+      "item": "atomicraft:iodine_dust"
+    },
+    {
+      "item": "atomicraft:iodine_dust"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "atomicraft:potassium_iodide_pill"
+  }
+}

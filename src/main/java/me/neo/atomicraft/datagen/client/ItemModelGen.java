@@ -21,7 +21,9 @@ public class ItemModelGen extends ItemModelProvider {
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemGenerated, "burned_potato");
         builder(itemGenerated, "potash");
+        builder(itemGenerated, "potassium_dust");
         builder(itemGenerated, "kelp_dust");
+        builder(itemGenerated, "iodine_dust");
         builder(itemGenerated, "potassium_iodide_pill");
         builder(itemGenerated, "pestle_and_mortar");
     }

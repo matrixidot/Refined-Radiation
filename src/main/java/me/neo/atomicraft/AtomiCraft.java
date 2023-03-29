@@ -33,11 +33,6 @@ import org.slf4j.Logger;
 public class AtomiCraft {
     public static final String MOD_ID = "atomicraft";
     private static final Logger LOGGER = LogUtils.getLogger();
-
-    @SubscribeEvent
-    public void pickupItem(EntityItemPickupEvent event) {
-        System.out.println("Item picked up!");
-    }
     public AtomiCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

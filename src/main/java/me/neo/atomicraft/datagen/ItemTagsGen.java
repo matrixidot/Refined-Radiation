@@ -17,8 +17,10 @@ public class ItemTagsGen extends ItemTagsProvider {
     @Override
     protected void addTags() {
         tag(ItemTagsAC.BURNED_POTATO).add(ItemInit.BURNED_POTATO.get());
-        tag(ItemTagsAC.KELP_DUST).add(ItemInit.KELP_DUST.get());
         tag(ItemTagsAC.POTASH).add(ItemInit.POTASH.get());
+        tag(ItemTagsAC.POTASSIUM_DUST).add(ItemInit.POTASSIUM_DUST.get());
+        tag(ItemTagsAC.KELP_DUST).add(ItemInit.KELP_DUST.get());
+        tag(ItemTagsAC.IODINE_DUST).add(ItemInit.IODINE_DUST.get());
         tag(ItemTagsAC.POTASSIUM_IODIDE_PILL).add(ItemInit.POTASSIUM_IODIDE_PILL.get());
         tag(ItemTagsAC.PESTLE_AND_MORTAR).add(ItemInit.PESTLE_AND_MORTAR.get());
     }

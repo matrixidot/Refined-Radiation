@@ -1,3 +1,17 @@
-// 1.19.2	2023-03-28T20:54:25.3640603	Recipes
+// 1.19.2	2023-03-29T09:30:31.9390414	Recipes
+441718c457ae4487524d674b1a1dbb6187f61cf5 data/atomicraft/advancements/recipes/misc/burned_potato_smelt.json
+34b5c60f5c14eb1425a6e1e7c3ac428e314bb170 data/atomicraft/advancements/recipes/misc/burned_potato_smoke.json
+7a9b204ea8b6065505bc45323cede2e251ab8351 data/atomicraft/advancements/recipes/misc/iodine_dust.json
+5285f94578c5dc34332b4abbc262840fd0ba9551 data/atomicraft/advancements/recipes/misc/kelp_dust.json
 ce942a31b9dcc61a03e77f155684dcf3b7f0e962 data/atomicraft/advancements/recipes/misc/pestle_and_mortar.json
+cad3dd6cd1201bf433f80841be5035f5f5c68f13 data/atomicraft/advancements/recipes/misc/potash.json
+c81b2af37f55cd42820aa871c362f73006bb5b84 data/atomicraft/advancements/recipes/misc/potassium_dust.json
+fa03be797288415574f4a8cf629b614a4fd5019e data/atomicraft/advancements/recipes/misc/potassium_iodide_pill.json
+45a9e64c290766a0d8b47e5f42466f10a78d937f data/atomicraft/recipes/burned_potato_smelt.json
+ece6c774ed4dc14050c1ea31db73bfc935da69ec data/atomicraft/recipes/burned_potato_smoke.json
+710baab580e9b2d94d6beb82899ca79ce9bf821b data/atomicraft/recipes/iodine_dust.json
+a73cc87d06962b96a2efe2069109568cd310a20f data/atomicraft/recipes/kelp_dust.json
 c169b30d83a9f146dc4179f974cc0ea84981bfa1 data/atomicraft/recipes/pestle_and_mortar.json
+7985ce87795e7584547063868bcd5b9e02252a73 data/atomicraft/recipes/potash.json
+c0de9d28e123b9d6f44ae8c54bd821b64799042c data/atomicraft/recipes/potassium_dust.json
+76e7d5dd8d093773299775ed1f565f01d4493381 data/atomicraft/recipes/potassium_iodide_pill.json

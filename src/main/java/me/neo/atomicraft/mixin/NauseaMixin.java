@@ -25,7 +25,6 @@ public abstract class NauseaMixin {
     private void render(float pPartialTicks, long pNanoTime, boolean pRenderLevel, CallbackInfo ci) {
         if (pRenderLevel && getMinecraft().level != null) {
             if (getMinecraft().player != null) {
-                System.out.println(Mth.lerp(pPartialTicks, getMinecraft().player.oPortalTime, getMinecraft().player.portalTime));
                 float f = Mth.lerp(pPartialTicks, getMinecraft().player.oPortalTime, getMinecraft().player.portalTime);
                 float f1 = getMinecraft().options.screenEffectScale().get().floatValue();
                 if (f > 0.0F && getMinecraft().player.hasEffect(EffectInit.RADIATION_POISONING.get()) && f1 < 1.0F) {
@@ -38,7 +37,6 @@ public abstract class NauseaMixin {
     private static final ResourceLocation RADIATION_POISONING_LOCATION = new ResourceLocation("textures/misc/radiation_poisoning.png");
 
     private void renderRadiationOverlay(float pScalar) {
-        System.out.println(1);
         int i = getMinecraft().getWindow().getGuiScaledWidth();
         int j = getMinecraft().getWindow().getGuiScaledHeight();
         double d0 = Mth.lerp((double)pScalar, 2.0D, 1.0D);

@@ -21,7 +21,9 @@ public class LanguageGen extends LanguageProvider {
 
         add(ItemInit.BURNED_POTATO.get(), "Burned Potato");
         add(ItemInit.POTASH.get(), "Potash");
+        add(ItemInit.POTASSIUM_DUST.get(), "Potassium Dust");
         add(ItemInit.KELP_DUST.get(), "Kelp Dust");
+        add(ItemInit.IODINE_DUST.get(), "Iodine Dust");
         add(ItemInit.POTASSIUM_IODIDE_PILL.get(), "Potassium Iodide Pill");
         add(ItemInit.PESTLE_AND_MORTAR.get(), "Pestle and Mortar");
 
