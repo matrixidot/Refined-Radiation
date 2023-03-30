@@ -14,21 +14,21 @@ public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, AtomiCraft.MOD_ID);
 
     public static final RegistryObject<Item> BURNED_POTATO = ITEMS.register("burned_potato", () ->
-            new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
     public static final RegistryObject<Item> POTASH = ITEMS.register("potash", () ->
-            new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
     public static final RegistryObject<Item> POTASSIUM_DUST = ITEMS.register("potassium_dust", () ->
-            new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
     public static final RegistryObject<Item> KELP_DUST = ITEMS.register("kelp_dust", () ->
-            new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
     public static final RegistryObject<Item> IODINE_DUST = ITEMS.register("iodine_dust", () ->
-            new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
 
     public static final RegistryObject<Item> POTASSIUM_IODIDE_PILL = ITEMS.register("potassium_iodide_pill", () ->
-            new PotassiumIodinePillItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1)));
+            new PotassiumIodinePillItem(new Item.Properties().tab(ModTab.ATOMI_CRAFT).stacksTo(1)));
 
     public static final RegistryObject<Item> PESTLE_AND_MORTAR = ITEMS.register("pestle_and_mortar", () ->
-            new PestleAndMortarItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC).durability(48)));
+            new PestleAndMortarItem(new Item.Properties().tab(ModTab.ATOMI_CRAFT).durability(48)));
 
 
     public static void register(IEventBus eventBus) {

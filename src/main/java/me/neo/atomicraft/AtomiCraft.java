@@ -2,9 +2,7 @@ package me.neo.atomicraft;
 
 import com.mojang.logging.LogUtils;
 import me.neo.atomicraft.datagen.client.registries.BlockRenderTypeRegistry;
-import me.neo.atomicraft.init.BlockInit;
-import me.neo.atomicraft.init.EffectInit;
-import me.neo.atomicraft.init.ItemInit;
+import me.neo.atomicraft.init.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.item.BlockItem;
@@ -38,6 +36,8 @@ public class AtomiCraft {
 
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
+        RecipeInit.register(modEventBus);
+        TileEntityInit.register(modEventBus);
         EffectInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -46,7 +46,7 @@ public class AtomiCraft {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            System.out.println("gabagool");
+            Packets.register();
         });
     }
 
