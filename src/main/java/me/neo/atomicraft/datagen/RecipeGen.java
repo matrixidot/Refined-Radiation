@@ -1,6 +1,7 @@
 package me.neo.atomicraft.datagen;
 
 import me.neo.atomicraft.AtomiCraft;
+import me.neo.atomicraft.init.BlockInit;
 import me.neo.atomicraft.init.ItemInit;
 import me.neo.atomicraft.util.ItemTagsAC;
 import net.minecraft.data.DataGenerator;
@@ -39,6 +40,12 @@ public class RecipeGen extends RecipeProvider {
                 .unlockedBy("has_item", has(ItemInit.PESTLE_AND_MORTAR.get())).save(recipe, modId("potassium_iodide_pill"));
 
         cook(recipe, Items.BAKED_POTATO, ItemInit.BURNED_POTATO.get(), .7f, 200, "burned_potato");
+
+        storageBlock(recipe, ItemInit.LEAD_NUGGET.get(), ItemInit.LEAD_INGOT.get(), "lead_i");
+        storageBlock(recipe, ItemInit.LEAD_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "lead_b");
+        storageBlock(recipe, ItemInit.RAW_LEAD.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_lead_b");
+
+        smelt(recipe, ItemInit.RAW_LEAD.get(), ItemInit.LEAD_INGOT.get(), .7f, 200, "lead_i");
     }
 
 
@@ -54,6 +61,11 @@ public class RecipeGen extends RecipeProvider {
                 .unlockedBy("has_item", has(in)).save(finishedRecipe, modId(name + "_smelt"));
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(in), out, exp, time/2)
                 .unlockedBy("has_item", has(in)).save(finishedRecipe, modId(name + "_smoke"));
+    }
+
+    private void storageBlock(Consumer<FinishedRecipe> recipeConsumer, ItemLike unpacked, ItemLike packed, String name) {
+        ShapelessRecipeBuilder.shapeless(unpacked, 9).requires(packed).unlockedBy(getHasName(packed), has(packed)).save(recipeConsumer, modId(name + "_unpack"));
+        ShapedRecipeBuilder.shaped(packed).define('#', unpacked).pattern("###").pattern("###").pattern("###").unlockedBy(getHasName(unpacked), has(unpacked)).save(recipeConsumer, modId(name + "_pack"));
     }
     private ResourceLocation modId(String path) {
         return new ResourceLocation(AtomiCraft.MOD_ID, path);

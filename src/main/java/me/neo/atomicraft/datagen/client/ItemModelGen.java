@@ -18,6 +18,11 @@ public class ItemModelGen extends ItemModelProvider {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
         withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
 
+        withExistingParent("lead_block", modLoc("block/lead_block"));
+        withExistingParent("raw_lead_block", modLoc("block/raw_lead_block"));
+        withExistingParent("lead_ore", modLoc("block/lead_ore"));
+        withExistingParent("deepslate_lead_ore", modLoc("block/deepslate_lead_ore"));
+
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
         builder(itemGenerated, "burned_potato");
         builder(itemGenerated, "potash");
@@ -26,6 +31,10 @@ public class ItemModelGen extends ItemModelProvider {
         builder(itemGenerated, "iodine_dust");
         builder(itemGenerated, "potassium_iodide_pill");
         builder(itemGenerated, "pestle_and_mortar");
+
+        builder(itemGenerated, "lead_ingot");
+        builder(itemGenerated, "lead_nugget");
+        builder(itemGenerated, "raw_lead");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

@@ -24,6 +24,13 @@ public class ItemInit {
     public static final RegistryObject<Item> IODINE_DUST = ITEMS.register("iodine_dust", () ->
             new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
 
+    public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot", () ->
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
+    public static final RegistryObject<Item> LEAD_NUGGET = ITEMS.register("lead_nugget", () ->
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
+    public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead", () ->
+            new Item(new Item.Properties().tab(ModTab.ATOMI_CRAFT)));
+
     public static final RegistryObject<Item> POTASSIUM_IODIDE_PILL = ITEMS.register("potassium_iodide_pill", () ->
             new PotassiumIodinePillItem(new Item.Properties().tab(ModTab.ATOMI_CRAFT).stacksTo(1)));
 

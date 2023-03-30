@@ -1,8 +1,12 @@
-// 1.19.2	2023-03-29T09:26:05.8704758	Tags for minecraft:item
+// 1.19.2	2023-03-30T12:57:43.3473859	Tags for minecraft:item
 13eaf3fdedb9e4101ce8b7a2bd185a042a9d90d9 data/forge/tags/items/burned_potato.json
+3b190ef459a4b3b923b27328602b7d334f236834 data/forge/tags/items/ingots.json
 717bddb3197e61a5767112bd964cff97a0bf793e data/forge/tags/items/iodine_dust.json
 7b3a4dc17fc2ba5bba0a86a766f23794c2ec007e data/forge/tags/items/kelp_dust.json
+93d8c72c7b80f384ab429e5c10699bfaff705919 data/forge/tags/items/nuggets.json
 8bf2c409d506a10fb3afe146d39d6464653b4cd5 data/forge/tags/items/pestle_and_mortar.json
 51b6c4b93f6eedb71e64ee3e98214849c0a7667e data/forge/tags/items/potash.json
 6f8020dd61499fcb828020d411b41884c9903c93 data/forge/tags/items/potassium_dust.json
 0d15ea824318039f0d8b9729e84ce11afb54c70b data/forge/tags/items/potassium_iodide_pill.json
+bbc29cd4d805fff8e1082deedd34a424e014fb9f data/forge/tags/items/raw_materials.json
+64c7b66793a00eef34381f0b457806499182e8f7 data/forge/tags/items/storage_blocks.json

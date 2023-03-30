@@ -19,6 +19,11 @@ public class BlockLootTables extends BlockLoot {
     private void blockDrops() {
         this.dropSelf(BlockInit.CTM_TRANSPARENCY_TEST.get());
         this.dropSelf(BlockInit.REINFORCED_CONCRETE.get());
+
+        this.dropSelf(BlockInit.LEAD_BLOCK.get());
+        this.dropSelf(BlockInit.RAW_LEAD_BLOCK.get());
+        this.dropSelf(BlockInit.LEAD_ORE.get());
+        this.dropSelf(BlockInit.DEEPSLATE_LEAD_ORE.get());
     }
 
     @Override
