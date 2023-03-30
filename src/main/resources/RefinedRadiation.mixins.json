@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.neo.refinedradiation.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "refinedradiation.refmap.json",
+  "mixins": [
+    "NauseaMixin",
+    "oPortalTimeMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

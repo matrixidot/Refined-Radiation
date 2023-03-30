@@ -1,7 +1,7 @@
-// 1.19.2	2023-03-30T12:57:43.3473859	LootTables
-85cbd204679a8e80500618ce6554d3dd5289b275 data/atomicraft/loot_tables/blocks/ctm_transparency_test.json
-d4e705e4578fa1fc6a268baff0b0a9e7ff4f60f0 data/atomicraft/loot_tables/blocks/deepslate_lead_ore.json
-6b2078869215233def90683bd3a3b2bb582eb338 data/atomicraft/loot_tables/blocks/lead_block.json
-008a8464162caabfc1c61e7aa8fd9fa9516fc0dd data/atomicraft/loot_tables/blocks/lead_ore.json
-07dc836b80f3db08b0cda7e4ec0d4c4c190e44f2 data/atomicraft/loot_tables/blocks/raw_lead_block.json
-ae7e134fc82f8e760cd249489f16dd29a2f39f76 data/atomicraft/loot_tables/blocks/reinforced_concrete.json
+// 1.19.2	2023-03-30T15:52:14.0126654	LootTables
+9aefce0e63bd5ce05f366efc11464b33b4257af6 data/refinedradiation/loot_tables/blocks/ctm_transparency_test.json
+f264218ee4f00f8580845f2b67c4264d3cb6490a data/refinedradiation/loot_tables/blocks/deepslate_lead_ore.json
+e2163d63d5f1b8a098f46622ababb7637542abf3 data/refinedradiation/loot_tables/blocks/lead_block.json
+7d19f3548bc0c7a3db7f430be9d797f8467e24c8 data/refinedradiation/loot_tables/blocks/lead_ore.json
+7735c6596f8ea7b4c384ea8dea1a2dcb513261e6 data/refinedradiation/loot_tables/blocks/raw_lead_block.json
+ceb0d93be79fc705523f731dccb3630e2d730318 data/refinedradiation/loot_tables/blocks/reinforced_concrete.json
