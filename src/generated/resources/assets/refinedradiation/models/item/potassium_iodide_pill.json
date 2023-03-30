@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "refinedradiation:item/potassium_iodide_pill"
+  }
+}

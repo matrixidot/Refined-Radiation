@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "refinedradiation:potash"
+    },
+    {
+      "item": "refinedradiation:potash"
+    },
+    {
+      "item": "refinedradiation:potash"
+    },
+    {
+      "item": "refinedradiation:potash"
+    }
+  ],
+  "result": {
+    "item": "refinedradiation:potassium_dust"
+  }
+}

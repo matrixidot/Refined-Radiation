@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "refinedradiation:pestle_and_mortar"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "refinedradiation:kelp_dust"
+  }
+}

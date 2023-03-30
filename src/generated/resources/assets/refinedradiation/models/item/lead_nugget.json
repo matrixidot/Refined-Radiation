@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "refinedradiation:item/lead_nugget"
+  }
+}

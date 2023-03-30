@@ -1,0 +1,21 @@
+{
+  "block.refinedradiation.ctm_transparency_test": "Transparency Test",
+  "block.refinedradiation.deepslate_lead_ore": "Deepslate Lead Ore",
+  "block.refinedradiation.lead_block": "Block of Lead",
+  "block.refinedradiation.lead_ore": "Lead Ore",
+  "block.refinedradiation.raw_lead_block": "Block of Raw Lead",
+  "block.refinedradiation.reinforced_concrete": "Reinforced Concrete",
+  "death.attack.refinedradiation_radiation_poisoning": "%1$s was killed by radiation poisoning",
+  "effect.refinedradiation.radiation_poisoning": "Radiation Poisoning",
+  "item.refinedradiation.burned_potato": "Burned Potato",
+  "item.refinedradiation.iodine_dust": "Iodine Dust",
+  "item.refinedradiation.kelp_dust": "Kelp Dust",
+  "item.refinedradiation.lead_ingot": "Lead Ingot",
+  "item.refinedradiation.lead_nugget": "Lead Nugget",
+  "item.refinedradiation.pestle_and_mortar": "Pestle and Mortar",
+  "item.refinedradiation.potash": "Potash",
+  "item.refinedradiation.potassium_dust": "Potassium Dust",
+  "item.refinedradiation.potassium_iodide_pill": "Potassium Iodide Pill",
+  "item.refinedradiation.raw_lead": "Raw Lead",
+  "itemGroup.actab": "Refined Radiation"
+}

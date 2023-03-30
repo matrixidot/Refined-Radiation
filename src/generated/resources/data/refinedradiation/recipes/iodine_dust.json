@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "refinedradiation:kelp_dust"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "refinedradiation:iodine_dust"
+  }
+}
