@@ -13,7 +13,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import java.util.Collections;
 import java.util.List;
 
-public abstract class ACRecipe implements Recipe<SimpleContainer> {
+public abstract class BaseRecipeRR implements Recipe<SimpleContainer> {
     private final ResourceLocation id;
     private ItemStack output;
     private NonNullList<Ingredient> ingredients = NonNullList.create();
@@ -22,7 +22,7 @@ public abstract class ACRecipe implements Recipe<SimpleContainer> {
     private int processingTime;
     private int powerUsage;
 
-    public ACRecipe(ResourceLocation id) {
+    public BaseRecipeRR(ResourceLocation id) {
         this.id = id;
     }
 
@@ -41,7 +41,7 @@ public abstract class ACRecipe implements Recipe<SimpleContainer> {
     private boolean test(SimpleContainer container, int ingNum, int slot, int amount) {
         return ingredients.get(ingNum).test(container.getItem(slot)) && container.getItem(slot).getCount() >= amount;
     }
-
+    /* Getters and Setters */
     public ResourceLocation getRecipeID() {
         return id;
     }
@@ -90,10 +90,10 @@ public abstract class ACRecipe implements Recipe<SimpleContainer> {
         return processingTime;
     }
 
-    public void setPowerUsage(int fePerTick) {
+    public void setPowerUsageTick(int fePerTick) {
         powerUsage = fePerTick;
     }
-    public int getPowerUsage() {
+    public int getPowerUsageTick() {
         return powerUsage;
     }
 }

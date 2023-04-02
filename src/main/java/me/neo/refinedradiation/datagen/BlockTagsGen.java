@@ -21,13 +21,15 @@ public class BlockTagsGen extends BlockTagsProvider {
                 .add(BlockInit.LEAD_BLOCK.get())
                 .add(BlockInit.RAW_LEAD_BLOCK.get())
                 .add(BlockInit.LEAD_ORE.get())
-                .add(BlockInit.DEEPSLATE_LEAD_ORE.get());
+                .add(BlockInit.DEEPSLATE_LEAD_ORE.get())
+                .add(BlockInit.TEST.get());
         tag(BlockTags.NEEDS_IRON_TOOL);
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockInit.LEAD_BLOCK.get())
                 .add(BlockInit.RAW_LEAD_BLOCK.get())
                 .add(BlockInit.LEAD_ORE.get())
+                .add(BlockInit.TEST.get())
                 .add(BlockInit.DEEPSLATE_LEAD_ORE.get());
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(BlockInit.LEAD_BLOCK.get());

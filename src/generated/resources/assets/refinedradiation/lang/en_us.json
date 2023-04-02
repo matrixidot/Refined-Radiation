@@ -5,6 +5,7 @@
   "block.refinedradiation.lead_ore": "Lead Ore",
   "block.refinedradiation.raw_lead_block": "Block of Raw Lead",
   "block.refinedradiation.reinforced_concrete": "Reinforced Concrete",
+  "block.refinedradiation.test": "Test Block",
   "death.attack.refinedradiation_radiation_poisoning": "%1$s was killed by radiation poisoning",
   "effect.refinedradiation.radiation_poisoning": "Radiation Poisoning",
   "item.refinedradiation.burned_potato": "Burned Potato",
@@ -17,5 +18,6 @@
   "item.refinedradiation.potassium_dust": "Potassium Dust",
   "item.refinedradiation.potassium_iodide_pill": "Potassium Iodide Pill",
   "item.refinedradiation.raw_lead": "Raw Lead",
-  "itemGroup.actab": "Refined Radiation"
+  "itemGroup.rrtab": "Refined Radiation",
+  "testtile": "Test Tile"
 }

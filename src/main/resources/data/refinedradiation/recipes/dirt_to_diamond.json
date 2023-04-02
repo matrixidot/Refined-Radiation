@@ -1,0 +1,21 @@
+{
+  "type": "refinedradiation:test_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:dirt",
+      "count": 1
+    }
+  ],
+  "misc": [
+    {
+      "time": 100
+    },
+    {
+      "power": 20
+    }
+  ],
+  "output": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

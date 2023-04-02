@@ -21,8 +21,9 @@ public class RefinedRadiation {
 
         ItemInit.register(modEventBus);
         BlockInit.register(modEventBus);
-        RecipeInit.register(modEventBus);
         TileEntityInit.register(modEventBus);
+        MenuInit.register(modEventBus);
+        RecipeInit.register(modEventBus);
         EffectInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

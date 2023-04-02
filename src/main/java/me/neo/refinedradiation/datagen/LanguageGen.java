@@ -12,7 +12,7 @@ public class LanguageGen extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add("itemGroup." + ModTab.ATOMI_CRAFT.getRecipeFolderName(), "Refined Radiation");
+        add("itemGroup." + ModTab.RR.getRecipeFolderName(), "Refined Radiation");
 
         add(BlockInit.CTM_TRANSPARENCY_TEST.get(), "Transparency Test");
         add(BlockInit.REINFORCED_CONCRETE.get(), "Reinforced Concrete");
@@ -22,6 +22,8 @@ public class LanguageGen extends LanguageProvider {
         add(BlockInit.RAW_LEAD_BLOCK.get(), "Block of Raw Lead");
         add(BlockInit.LEAD_ORE.get(), "Lead Ore");
         add(BlockInit.DEEPSLATE_LEAD_ORE.get(), "Deepslate Lead Ore");
+        add(BlockInit.TEST.get(), "Test Block");
+
 
         add(ItemInit.LEAD_INGOT.get(), "Lead Ingot");
         add(ItemInit.LEAD_NUGGET.get(), "Lead Nugget");
@@ -35,6 +37,8 @@ public class LanguageGen extends LanguageProvider {
         add(ItemInit.IODINE_DUST.get(), "Iodine Dust");
         add(ItemInit.POTASSIUM_IODIDE_PILL.get(), "Potassium Iodide Pill");
         add(ItemInit.PESTLE_AND_MORTAR.get(), "Pestle and Mortar");
+
+        add("testtile", "Test Tile");
 
 
         add(EffectInit.RADIATION_POISONING.get(), "Radiation Poisoning");

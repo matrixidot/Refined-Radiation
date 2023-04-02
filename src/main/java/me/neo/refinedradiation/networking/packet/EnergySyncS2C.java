@@ -1,4 +1,7 @@
 package me.neo.refinedradiation.networking.packet;
+import me.neo.refinedradiation.block.test.TestMenu;
+import me.neo.refinedradiation.block.test.TestTile;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
@@ -27,6 +30,11 @@ public class EnergySyncS2C {
     public boolean handle(Supplier<NetworkEvent.Context> supplier) {
         NetworkEvent.Context context = supplier.get();
         context.enqueueWork(() -> {
+            if (Minecraft.getInstance().level.getBlockEntity(pos) instanceof TestTile tile) {
+                tile.setEnergyLevel(energy);
+                if (Minecraft.getInstance().player.containerMenu instanceof TestMenu menu && menu.getBlockEntity().getBlockPos().equals(pos))
+                    menu.getBlockEntity().setEnergyLevel(energy);
+            }
         });
         return true;
     }
@@ -35,8 +43,8 @@ public class EnergySyncS2C {
  * if (Minecraft.getInstance.level.getBlockEntity(pos) isntanceof BlockEntity entity) {
  *      entity.setEnergyLevel(energy);
  *
- *      if (Minecraft.getInstance().player.containerMenu instanceof BlockEntityMenu menu && menu.getBlockEntity.getBlockpos.equals(pos)) {
- *          blockEntity.setEnergyLevel(energy);
+ *      if (Minecraft.getInstance().player.containerMenu instanceof BlockEntityMenu menu && menu.getBlockEntity().getBlockPos().equals(pos)) {
+ *          menu.getBlockEntity().setEnergyLevel(energy);
  *      }
  * }
  */

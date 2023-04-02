@@ -42,7 +42,7 @@ authors="N3E0, DEPSTRCZ, ZAppFireCZ" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Adds an in-depth nuclear physics system to minecraft.
+Adds a fictional nuclear physics system to minecraft
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.refinedradiation]] #optional
