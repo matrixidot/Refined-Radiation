@@ -1,6 +1,7 @@
 package me.neo.refinedradiation.datagen.loot;
 
 import me.neo.refinedradiation.init.BlockInit;
+import me.neo.refinedradiation.init.ItemInit;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
@@ -13,7 +14,8 @@ public class BlockLootTables extends BlockLoot {
     }
 
     private void oreDrops() {
-
+        this.add(BlockInit.LEAD_ORE.get(), (block) -> createOreDrop(BlockInit.LEAD_ORE.get(), ItemInit.RAW_LEAD.get()));
+        this.add(BlockInit.DEEPSLATE_LEAD_ORE.get(), (block) -> createOreDrop(BlockInit.DEEPSLATE_LEAD_ORE.get(), ItemInit.RAW_LEAD.get()));
     }
 
     private void blockDrops() {
@@ -23,8 +25,6 @@ public class BlockLootTables extends BlockLoot {
 
         this.dropSelf(BlockInit.LEAD_BLOCK.get());
         this.dropSelf(BlockInit.RAW_LEAD_BLOCK.get());
-        this.dropSelf(BlockInit.LEAD_ORE.get());
-        this.dropSelf(BlockInit.DEEPSLATE_LEAD_ORE.get());
     }
 
     @Override
