@@ -25,11 +25,13 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.energy.IEnergyStorage;
+import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import javax.annotation.Nonnull;
 import java.util.Map;
 import java.util.Optional;
 
@@ -50,6 +52,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
                 return switch (pIndex) {
                     case 0 -> TestTile.this.progress;
                     case 1 -> TestTile.this.maxProgress;
+                    case 2 -> TestTile.this.energyStorage.getEnergyStored();
                     default -> 0;
                 };
             }
@@ -59,6 +62,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
                 switch (pIndex) {
                     case 0 -> TestTile.this.progress = pValue;
                     case 1 -> TestTile.this.maxProgress = pValue;
+                    case 2 -> TestTile.this.energyStorage.setEnergy(pValue);
                 }
             }
 
@@ -139,6 +143,16 @@ public class TestTile extends BlockEntity implements MenuProvider {
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
         Packets.sendToClients(new EnergySyncS2C(this.energyStorage.getEnergyStored(), worldPosition));
         return new TestMenu(pContainerId, pPlayerInventory, this, this.data);
+    }
+
+    @Nonnull
+    @Override
+    public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side) {
+        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+            return lazyItemHandler.cast();
+        }
+
+        return super.getCapability(cap, side);
     }
 
     public void drops() {

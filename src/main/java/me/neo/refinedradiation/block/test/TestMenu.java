@@ -1,5 +1,6 @@
 package me.neo.refinedradiation.block.test;
 
+import me.neo.refinedradiation.datagen.client.registries.ResultSlot;
 import me.neo.refinedradiation.init.BlockInit;
 import me.neo.refinedradiation.init.MenuInit;
 import net.minecraft.network.FriendlyByteBuf;
@@ -18,7 +19,7 @@ public class TestMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public TestMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3));
     }
 
     public TestMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
@@ -31,8 +32,8 @@ public class TestMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 12, 15));
-            this.addSlot(new SlotItemHandler(handler, 1, 30, 15));
+            this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
+            this.addSlot(new SlotItemHandler(handler, 1, 125, 35));
         });
         addDataSlots(data);
     }
@@ -47,8 +48,13 @@ public class TestMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int progressArrowSize = 26; //TODO: CHANGE THIS
+        int progressArrowSize = 22; //TODO: CHANGE THIS
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
+    }
+
+    public int getEnergy() {
+        int energy = this.data.get(2);
+        return energy;
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
@@ -65,8 +71,10 @@ public class TestMenu extends AbstractContainerMenu {
     private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
+
     // THIS YOU HAVE TO DEFINE!
     private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {
         Slot sourceSlot = slots.get(index);
@@ -100,6 +108,7 @@ public class TestMenu extends AbstractContainerMenu {
         return copyOfSourceStack;
     }
 
+
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, tile.getBlockPos()), pPlayer, BlockInit.TEST.get());
@@ -108,14 +117,14 @@ public class TestMenu extends AbstractContainerMenu {
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 86 + i * 18));
+                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
             }
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
+            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
 }

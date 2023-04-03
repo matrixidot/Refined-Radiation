@@ -34,15 +34,19 @@ public class TestScreen extends AbstractContainerScreen<TestMenu> {
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
+        int e = (menu.getEnergy() / 8000 * 54);
+        System.out.println(e);
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
+
+        blit(pPoseStack, x + 13, y + 17 + 54 - e, 176, 17 + 54 - e, 12, e);
         renderProgressArrow(pPoseStack, x, y);
     }
 
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
         if(menu.isWorking()) {
         // Stack, pos x, pos y, filled texture x, filled texture y, something, something
-            blit(pPoseStack, x + 101, y + 24, 176, 14, menu.getScaledProgress(), 16);
+            blit(pPoseStack, x + 101, y + 24, 177, 0, menu.getScaledProgress(), 17);
             blit(pPoseStack, x + 57, y + 21, 176, 30, 9, 9);
         }
     }

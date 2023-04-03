@@ -1,7 +1,9 @@
 package me.neo.refinedradiation;
 
 import com.mojang.logging.LogUtils;
+import me.neo.refinedradiation.block.test.TestScreen;
 import me.neo.refinedradiation.init.*;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -43,6 +45,7 @@ public class RefinedRadiation {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             // SCREENS!!!
+            MenuScreens.register(MenuInit.TEST.get(), TestScreen::new);
         }
     }
 }
