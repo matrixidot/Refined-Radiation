@@ -1,8 +1,8 @@
-// 1.19.2	2023-04-02T10:38:45.0062096	LootTables
+// 1.19.2	2023-04-02T16:44:42.7027298	LootTables
 9aefce0e63bd5ce05f366efc11464b33b4257af6 data/refinedradiation/loot_tables/blocks/ctm_transparency_test.json
-f264218ee4f00f8580845f2b67c4264d3cb6490a data/refinedradiation/loot_tables/blocks/deepslate_lead_ore.json
+796664c6717e15dbdc5b8c14d2f261e5580702c5 data/refinedradiation/loot_tables/blocks/deepslate_lead_ore.json
 e2163d63d5f1b8a098f46622ababb7637542abf3 data/refinedradiation/loot_tables/blocks/lead_block.json
-7d19f3548bc0c7a3db7f430be9d797f8467e24c8 data/refinedradiation/loot_tables/blocks/lead_ore.json
+a02785056ee515f6e3656f331ef8dc651844067a data/refinedradiation/loot_tables/blocks/lead_ore.json
 7735c6596f8ea7b4c384ea8dea1a2dcb513261e6 data/refinedradiation/loot_tables/blocks/raw_lead_block.json
 ceb0d93be79fc705523f731dccb3630e2d730318 data/refinedradiation/loot_tables/blocks/reinforced_concrete.json
 3ec0b7cc408cd31a4b109f91b31b7c4971b22b52 data/refinedradiation/loot_tables/blocks/test.json

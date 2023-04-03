@@ -1,4 +1,4 @@
-// 1.19.2	2023-03-30T15:52:14.0136652	Item Models: refinedradiation
+// 1.19.2	2023-04-02T16:44:42.7007364	Item Models: refinedradiation
 4bb8f509970e9c7e3a0d0dbe414e642d6dbe41fd assets/refinedradiation/models/item/burned_potato.json
 82fe8efc404c6491efef0fa2fd77386264a4c3ca assets/refinedradiation/models/item/ctm_transparency_test.json
 d707570764c284ecbf5fd4ad733e485f6f80928c assets/refinedradiation/models/item/deepslate_lead_ore.json
@@ -15,3 +15,4 @@ f4d834a05c6cbc9a7058904720ebe2ebcb2f3352 assets/refinedradiation/models/item/pot
 5617271e943120a4f42116fdd0c5e254d6eab277 assets/refinedradiation/models/item/raw_lead.json
 cf1938670ba34b0f34ce6abb66c381cd127eac66 assets/refinedradiation/models/item/raw_lead_block.json
 50dbe2ea1eafb9d9b0f00fa7c5cf941ea75ebed4 assets/refinedradiation/models/item/reinforced_concrete.json
+e04f5fad67083cd6272a74205fbbd0bcfaedc02e assets/refinedradiation/models/item/test.json

@@ -16,6 +16,7 @@ public class ItemModelGen extends ItemModelProvider {
     protected void registerModels() {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
         withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
+        withExistingParent("test", modLoc("block/test"));
 
         withExistingParent("lead_block", modLoc("block/lead_block"));
         withExistingParent("raw_lead_block", modLoc("block/raw_lead_block"));

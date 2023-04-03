@@ -14,6 +14,7 @@ public class BlockStateGen extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlock(BlockInit.REINFORCED_CONCRETE.get());
         simpleBlock(BlockInit.CTM_TRANSPARENCY_TEST.get());
+        simpleBlock(BlockInit.TEST.get());
 
         simpleBlock(BlockInit.LEAD_BLOCK.get());
         simpleBlock(BlockInit.RAW_LEAD_BLOCK.get());

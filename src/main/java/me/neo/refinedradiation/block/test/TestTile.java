@@ -100,26 +100,6 @@ public class TestTile extends BlockEntity implements MenuProvider {
     }
 
     @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == ForgeCapabilities.ENERGY)
-            return lazyEnergyHandler.cast();
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-            if (side == null) return lazyItemHandler.cast();
-            if (directionWrappedHandlerMap.containsKey(side)) {
-                Direction locDir = this.getBlockState().getValue(TestBlock.FACING);
-                if (side == Direction.UP || side == Direction.DOWN) return directionWrappedHandlerMap.get(side).cast();
-                return switch (locDir) {
-                    case EAST -> directionWrappedHandlerMap.get(side.getClockWise()).cast();
-                    case SOUTH -> directionWrappedHandlerMap.get(side).cast();
-                    case WEST -> directionWrappedHandlerMap.get(side.getCounterClockWise()).cast();
-                    default -> directionWrappedHandlerMap.get(side.getOpposite()).cast();
-                };
-            }
-        }
-        return super.getCapability(cap, side);
-    }
-
-    @Override
     public void onLoad() {
         super.onLoad();
         lazyItemHandler = LazyOptional.of(() -> itemHandler);
@@ -229,14 +209,4 @@ public class TestTile extends BlockEntity implements MenuProvider {
     private static boolean canOutputAmount(SimpleContainer inventory, int outputSlotIndex) {
         return inventory.getItem(outputSlotIndex).getMaxStackSize() > inventory.getItem(outputSlotIndex).getCount();
     }
-
-    private final Map<Direction, LazyOptional<WrappedHandler>> directionWrappedHandlerMap =
-            Map.of(Direction.DOWN, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 2, (i, s) -> false)),
-                    Direction.NORTH, LazyOptional.of(() -> new WrappedHandler(itemHandler, (index) -> index == 1,
-                            (index, stack) -> itemHandler.isItemValid(1, stack))),
-                    Direction.SOUTH, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 2, (i, s) -> false)),
-                    Direction.EAST, LazyOptional.of(() -> new WrappedHandler(itemHandler, (i) -> i == 1,
-                            (index, stack) -> itemHandler.isItemValid(1, stack))),
-                    Direction.WEST, LazyOptional.of(() -> new WrappedHandler(itemHandler, (index) -> index == 0 || index == 1,
-                            (index, stack) -> itemHandler.isItemValid(0, stack) || itemHandler.isItemValid(1, stack))));
 }
