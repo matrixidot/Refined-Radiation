@@ -165,6 +165,9 @@ public class TestTile extends BlockEntity implements MenuProvider {
 
     public static void tick(Level level, BlockPos pos, BlockState state, TestTile tile) {
         if (level.isClientSide()) return;
+        if (!hasRecipe(tile)) {
+            tile.progress = 0;
+        }
         if (hasRecipe(tile) && hasEnergy(tile)) {
             if (tile.progress >= tile.maxProgress) {
                 craftItem(tile);

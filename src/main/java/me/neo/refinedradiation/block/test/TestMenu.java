@@ -36,10 +36,10 @@ public class TestMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
             this.addSlot(new SlotItemHandler(handler, 1, 125, 35));
 
-            //this.addSlot(new SlotItemHandler(handler, 2, 28, 52));
+            this.addSlot(new SlotItemHandler(handler, 2, 28, 52));
         });
-        //addWingSlots(3,-32);
-        //addWingSlots(9,169);
+        addWingSlots(3,-32);
+        addWingSlots(9,169);
 
         addDataSlots(data);
     }
