@@ -25,14 +25,12 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.energy.IEnergyStorage;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
-import java.util.Map;
 import java.util.Optional;
 
 public class TestTile extends BlockEntity implements MenuProvider {
@@ -52,7 +50,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
                 return switch (pIndex) {
                     case 0 -> TestTile.this.progress;
                     case 1 -> TestTile.this.maxProgress;
-                    case 2 -> TestTile.this.energyStorage.getEnergyStored();
+                    case 2 -> TestTile.this.getEnergyStorage().getEnergyStored();
                     default -> 0;
                 };
             }
@@ -68,12 +66,12 @@ public class TestTile extends BlockEntity implements MenuProvider {
 
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
         };
     }
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(2) {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(15) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
@@ -148,8 +146,11 @@ public class TestTile extends BlockEntity implements MenuProvider {
     @Nonnull
     @Override
     public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> cap, @javax.annotation.Nullable Direction side) {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
             return lazyItemHandler.cast();
+        }
+        if (cap == ForgeCapabilities.ENERGY) {
+            return lazyEnergyHandler.cast();
         }
 
         return super.getCapability(cap, side);
@@ -182,7 +183,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
 
     private static void craftItem(TestTile tile) {
         ItemStackHandler itemHandler = tile.itemHandler;
-        SimpleContainer container = new SimpleContainer(2);
+        SimpleContainer container = new SimpleContainer(15);
         for (int i = 0; i < itemHandler.getSlots(); i++) {
             container.setItem(i, itemHandler.getStackInSlot(i));
         }
@@ -212,7 +213,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
     }
 
     private static boolean hasEnergy(TestTile tile) {
-        return tile.energyStorage.getEnergyStored() >= (tile.energyUsage * tile.maxProgress);
+        return tile.energyStorage.getEnergyStored() > 0;
     }
     private static <T extends Recipe<SimpleContainer>> boolean hasEnoughIngredients(T recipe, SimpleContainer inventory, Level level) {
         return recipe.matches(inventory, level);

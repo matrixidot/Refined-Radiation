@@ -24,17 +24,23 @@ public class TestMenu extends AbstractContainerMenu {
 
     public TestMenu(int id, Inventory inv, BlockEntity entity, ContainerData data) {
         super(MenuInit.TEST.get(), id);
-        checkContainerSize(inv, 2);
+        checkContainerSize(inv, 15);
         tile = (TestTile) entity;
         this.level = inv.player.level;
         this.data = data;
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
+
         this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
             this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
             this.addSlot(new SlotItemHandler(handler, 1, 125, 35));
+
+            //this.addSlot(new SlotItemHandler(handler, 2, 28, 52));
         });
+        //addWingSlots(3,-32);
+        //addWingSlots(9,169);
+
         addDataSlots(data);
     }
 
@@ -48,13 +54,12 @@ public class TestMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int progressArrowSize = 22; //TODO: CHANGE THIS
+        int progressArrowSize = 22;
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
 
-    public int getEnergy() {
-        int energy = this.data.get(2);
-        return energy;
+    public float getEnergy() {
+        return this.data.get(2);
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
@@ -73,7 +78,7 @@ public class TestMenu extends AbstractContainerMenu {
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
 
     // THIS YOU HAVE TO DEFINE!
-    private static final int TE_INVENTORY_SLOT_COUNT = 2;  // must be the number of slots you have!
+    private static final int TE_INVENTORY_SLOT_COUNT = 15;  // must be the number of slots you have!
 
     @Override
     public ItemStack quickMoveStack(Player playerIn, int index) {
@@ -126,5 +131,16 @@ public class TestMenu extends AbstractContainerMenu {
         for (int i = 0; i < 9; ++i) {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
+    }
+
+    private void addWingSlots(int StartingIndex, int x) {
+        this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
+            this.addSlot(new SlotItemHandler(handler, StartingIndex, x, 13));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 1, x + 22, 13));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 2, x, 31));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 3, x, 31));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 4, x + 22, 53));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 5, x, 53));
+        });
     }
 }

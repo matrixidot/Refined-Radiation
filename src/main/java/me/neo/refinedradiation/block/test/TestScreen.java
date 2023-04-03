@@ -34,20 +34,40 @@ public class TestScreen extends AbstractContainerScreen<TestMenu> {
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
-        int e = (menu.getEnergy() / 8000 * 54);
-        System.out.println(e);
+        int e = Math.round((menu.getEnergy() / 8000) * 54);
 
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
 
         blit(pPoseStack, x + 13, y + 17 + 54 - e, 176, 17 + 54 - e, 12, e);
+
+        blit(pPoseStack, x - 45, y , 0, 166 , 54, 83);
+        blit(pPoseStack, x + 167, y , 54, 166 , 54, 83);
+
+
+        if (pMouseX > x + 27 && pMouseX < x + 32 && pMouseY > y + 42 && pMouseY < y + 51) {
+            blit(pPoseStack, x + 28, y + 43, 108, 172 , 4, 8);
+        }
+        //else if (pMouseX > x + 0 && pMouseX < x + 9 && pMouseY >= y + 0 && pMouseY <= y + 81) {
+        //    blit(pPoseStack, x + 3, y + 40, 108, 166 , 3, 6);
+        //}
+        //else if (pMouseX > x + 167 && pMouseX < x + 175 && pMouseY >= y + 0 && pMouseY <= y + 81) {
+        //    blit(pPoseStack, x + 170, y + 40, 111, 166 , 3, 6);
+        //}
+        else if (pMouseX > x + -46 && pMouseX < x - 36 && pMouseY >= y + 0 && pMouseY <= y + 81) {
+            blit(pPoseStack, x + -42, y + 40, 111, 166 , 3, 6);
+        }
+        else if (pMouseX > x + 211 && pMouseX < x + 221 && pMouseY >= y + 0 && pMouseY <= y + 81) {
+            blit(pPoseStack, x + 215, y + 40, 108, 166, 3, 6);
+        }
+
+
         renderProgressArrow(pPoseStack, x, y);
     }
 
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
         if(menu.isWorking()) {
         // Stack, pos x, pos y, filled texture x, filled texture y, something, something
-            blit(pPoseStack, x + 101, y + 24, 177, 0, menu.getScaledProgress(), 17);
-            blit(pPoseStack, x + 57, y + 21, 176, 30, 9, 9);
+            blit(pPoseStack, x + 85, y + 35, 177, 0, menu.getScaledProgress(), 17);
         }
     }
 
