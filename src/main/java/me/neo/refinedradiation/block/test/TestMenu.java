@@ -138,9 +138,9 @@ public class TestMenu extends AbstractContainerMenu {
             this.addSlot(new SlotItemHandler(handler, StartingIndex, x, 13));
             this.addSlot(new SlotItemHandler(handler, StartingIndex + 1, x + 22, 13));
             this.addSlot(new SlotItemHandler(handler, StartingIndex + 2, x, 31));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 3, x, 31));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 4, x + 22, 53));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 5, x, 53));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 3, x + 22, 31));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 4, x, 53));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 5, x + 22, 53));
         });
     }
 }
