@@ -39,6 +39,8 @@ public class TestTile extends BlockEntity implements MenuProvider {
     private int maxProgress = 100;
     private int energyUsage = 32;
 
+    public int maxEnergyStored = 8000;
+
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
     private LazyOptional<IEnergyStorage> lazyEnergyHandler = LazyOptional.empty();
 
@@ -51,6 +53,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
                     case 0 -> TestTile.this.progress;
                     case 1 -> TestTile.this.maxProgress;
                     case 2 -> TestTile.this.getEnergyStorage().getEnergyStored();
+                    case 3 -> TestTile.this.maxEnergyStored;
                     default -> 0;
                 };
             }
@@ -61,6 +64,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
                     case 0 -> TestTile.this.progress = pValue;
                     case 1 -> TestTile.this.maxProgress = pValue;
                     case 2 -> TestTile.this.energyStorage.setEnergy(pValue);
+                    case 3 -> TestTile.this.maxEnergyStored = pValue;
                 }
             }
 
@@ -87,7 +91,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
         }
     };
 
-    private final CustomEnergyStorage energyStorage = new CustomEnergyStorage(8000, 1024) {
+    private final CustomEnergyStorage energyStorage = new CustomEnergyStorage(maxEnergyStored, 1024) {
         @Override
         public void onEnergyChanged() {
             setChanged();

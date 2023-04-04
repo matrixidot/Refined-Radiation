@@ -38,7 +38,29 @@ public class LanguageGen extends LanguageProvider {
         add(ItemInit.POTASSIUM_IODIDE_PILL.get(), "Potassium Iodide Pill");
         add(ItemInit.PESTLE_AND_MORTAR.get(), "Pestle and Mortar");
 
+        add(ItemInit.INPUT_CONFIGURATION_CARD.get(), "Input Configuration Card");
+        add(ItemInit.OUTPUT_CONFIGURATION_CARD.get(), "Output Configuration Card");
+
         add("testtile", "Test Tile");
+
+        add("refinedradiation.lightblue.true", "§b█ §7Light Blue: §bTrue");
+        add("refinedradiation.lightblue.false", "§8█ §7Light Blue: §cFalse");
+        add("refinedradiation.cyan.true", "§3█ §7Cyan: §bTrue");
+        add("refinedradiation.cyan.false", "§8█ §7Cyan: §cFalse");
+        add("refinedradiation.blue.true", "§9█ §7Blue: §bTrue");
+        add("refinedradiation.blue.false", "§8█ §7Blue: §cFalse");
+        add("refinedradiation.purple.true", "§5█ §7Purple: §bTrue");
+        add("refinedradiation.purple.false", "§8█ §7Purple: §cFalse");
+
+        add("refinedradiation.red.true", "§c█ §7Red: §bTrue");
+        add("refinedradiation.red.false", "§8█ §7Red: §cFalse");
+        add("refinedradiation.orange.true", "§6█ §7Orange: §bTrue");
+        add("refinedradiation.orange.false", "§8█ §7Orange: §cFalse");
+        add("refinedradiation.yellow.true", "§e█ §7Yellow: §bTrue");
+        add("refinedradiation.yellow.false", "§8█ §7Yellow: §cFalse");
+        add("refinedradiation.pink.true", "§d█ §7Pink: §bTrue");
+        add("refinedradiation.pink.false", "§8█ §7Pink: §cFalse");
+
 
 
         add(EffectInit.RADIATION_POISONING.get(), "Radiation Poisoning");

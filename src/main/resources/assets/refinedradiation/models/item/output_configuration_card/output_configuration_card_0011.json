@@ -1,0 +1,6 @@
+{
+  "parent": "refinedradiation:item/output_configuration_card",
+  "textures": {
+    "layer0": "refinedradiation:item/output_configuration_card/output_configuration_card_0011"
+  }
+}

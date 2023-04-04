@@ -1,6 +1,8 @@
 package me.neo.refinedradiation.init;
 
 import me.neo.refinedradiation.RefinedRadiation;
+import me.neo.refinedradiation.custom.item.InputConfigurationCardItem;
+import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem;
 import me.neo.refinedradiation.custom.item.PestleAndMortarItem;
 import me.neo.refinedradiation.custom.item.PotassiumIodinePillItem;
 import net.minecraft.world.item.Item;
@@ -29,6 +31,11 @@ public class ItemInit {
             new Item(new Item.Properties().tab(ModTab.RR)));
     public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
+
+    public static final RegistryObject<Item> INPUT_CONFIGURATION_CARD = ITEMS.register("input_configuration_card", () ->
+            new InputConfigurationCardItem(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> OUTPUT_CONFIGURATION_CARD = ITEMS.register("output_configuration_card", () ->
+            new OutputConfigurationCardItem(new Item.Properties().tab(ModTab.RR)));
 
     public static final RegistryObject<Item> POTASSIUM_IODIDE_PILL = ITEMS.register("potassium_iodide_pill", () ->
             new PotassiumIodinePillItem(new Item.Properties().tab(ModTab.RR).stacksTo(1)));

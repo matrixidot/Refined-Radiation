@@ -1,0 +1,6 @@
+{
+  "parent": "refinedradiation:item/input_configuration_card",
+  "textures": {
+    "layer0": "refinedradiation:item/input_configuration_card/input_configuration_card_1110"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "refinedradiation:item/output_configuration_card/output_configuration_card_0000"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0001"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0010"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0011"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0100"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0101"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0110"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 0,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_0111"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1000"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1001"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1010"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 0,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1011"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 0
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1100"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 0,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1101"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1110"
+    },
+    {
+      "predicate": {
+        "refinedradiation:red": 1,
+        "refinedradiation:orange": 1,
+        "refinedradiation:yellow": 1,
+        "refinedradiation:pink": 1
+      },
+      "model": "refinedradiation:item/output_configuration_card/output_configuration_card_1111"
+    }
+  ]
+}
