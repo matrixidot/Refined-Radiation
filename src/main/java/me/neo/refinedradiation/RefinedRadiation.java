@@ -2,8 +2,8 @@ package me.neo.refinedradiation;
 
 import com.mojang.logging.LogUtils;
 import me.neo.refinedradiation.block.test.TestScreen;
-import me.neo.refinedradiation.custom.item.InputConfigurationCardItem;
-import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem;
+import me.neo.refinedradiation.custom.item.InputConfigurationCardItem.InputConfigurationCardItem;
+import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem.OutputConfigurationCardItem;
 import me.neo.refinedradiation.init.*;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.item.ItemProperties;
@@ -55,36 +55,36 @@ public class RefinedRadiation {
             {
                 ItemProperties.register(ItemInit.INPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "lightblue"), (stack, level, living, id) -> {
-                            return living != null && InputConfigurationCardItem.lightblue ? 1.0F : 0.0F;
+                            return living != null && InputConfigurationCardItem.getData(stack, "lightblue") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.INPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "cyan"), (stack, level, living, id) -> {
-                            return living != null && InputConfigurationCardItem.cyan ? 1.0F : 0.0F;
+                            return living != null && InputConfigurationCardItem.getData(stack, "cyan") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.INPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "blue"), (stack, level, living, id) -> {
-                            return living != null && InputConfigurationCardItem.blue ? 1.0F : 0.0F;
+                            return living != null && InputConfigurationCardItem.getData(stack, "blue") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.INPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "purple"), (stack, level, living, id) -> {
-                            return living != null && InputConfigurationCardItem.purple ? 1.0F : 0.0F;
+                            return living != null && InputConfigurationCardItem.getData(stack, "purple") ? 1.0F : 0.0F;
                         });
 
                 ItemProperties.register(ItemInit.OUTPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "red"), (stack, level, living, id) -> {
-                            return living != null && OutputConfigurationCardItem.red ? 1.0F : 0.0F;
+                            return living != null && OutputConfigurationCardItem.getData(stack, "red") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.OUTPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "orange"), (stack, level, living, id) -> {
-                            return living != null && OutputConfigurationCardItem.orange ? 1.0F : 0.0F;
+                            return living != null && OutputConfigurationCardItem.getData(stack, "orange") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.OUTPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "yellow"), (stack, level, living, id) -> {
-                            return living != null && OutputConfigurationCardItem.yellow ? 1.0F : 0.0F;
+                            return living != null && OutputConfigurationCardItem.getData(stack, "yellow") ? 1.0F : 0.0F;
                         });
                 ItemProperties.register(ItemInit.OUTPUT_CONFIGURATION_CARD.get(),
                         new ResourceLocation(RefinedRadiation.MOD_ID, "pink"), (stack, level, living, id) -> {
-                            return living != null && OutputConfigurationCardItem.pink ? 1.0F : 0.0F;
+                            return living != null && OutputConfigurationCardItem.getData(stack, "pink") ? 1.0F : 0.0F;
                         });
             });
         }
