@@ -23,6 +23,8 @@ public class BlockLootTables extends BlockLoot {
         this.dropSelf(BlockInit.REINFORCED_CONCRETE.get());
         this.dropSelf(BlockInit.TEST.get());
 
+        this.dropSelf(BlockInit.STEEL_BLOCK.get());
+
         this.dropSelf(BlockInit.LEAD_BLOCK.get());
         this.dropSelf(BlockInit.RAW_LEAD_BLOCK.get());
     }

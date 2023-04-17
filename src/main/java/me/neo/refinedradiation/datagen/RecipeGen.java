@@ -43,7 +43,12 @@ public class RecipeGen extends RecipeProvider {
         storageBlock(recipe, ItemInit.LEAD_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "lead_b");
         storageBlock(recipe, ItemInit.RAW_LEAD.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_lead_b");
 
+        storageBlock(recipe, ItemInit.STEEL_NUGGET.get(), ItemInit.STEEL_INGOT.get(), "steel_i");
+        storageBlock(recipe, ItemInit.STEEL_INGOT.get(), BlockInit.STEEL_BLOCK.get(), "steel_b");
+
         smelt(recipe, ItemInit.RAW_LEAD.get(), ItemInit.LEAD_INGOT.get(), .7f, 200, "lead_i");
+
+        blast_only(recipe, Items.IRON_INGOT, ItemInit.STEEL_INGOT.get(), .7f, 200, "steel_i");
     }
 
 
@@ -52,6 +57,11 @@ public class RecipeGen extends RecipeProvider {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(in), out, exp, time)
                 .unlockedBy("has_item", has(in)).save(finishedRecipe, modId(name + "_smelt"));
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(in), out, exp, time/2)
+                .unlockedBy("has_item", has(in)).save(finishedRecipe, modId(name + "_blast"));
+    }
+
+    public void blast_only(Consumer<FinishedRecipe> finishedRecipe, ItemLike in, ItemLike out, float exp, int time, String name) {
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(in), out, exp, time)
                 .unlockedBy("has_item", has(in)).save(finishedRecipe, modId(name + "_blast"));
     }
     public void cook(Consumer<FinishedRecipe> finishedRecipe, ItemLike in, ItemLike out, float exp, int time, String name) {

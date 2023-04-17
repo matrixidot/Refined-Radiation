@@ -19,19 +19,27 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class TestBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+
+    public static final IntegerProperty EAST = IntegerProperty.create("east_out", 0 , 30);
+    public static final IntegerProperty WEST = IntegerProperty.create("west_out", 0 , 30);
+    public static final IntegerProperty UP = IntegerProperty.create("up_out", 0 , 30);
+    public static final IntegerProperty DOWN = IntegerProperty.create("down_out", 0 , 30);
     public static final BooleanProperty WORKING = BooleanProperty.create("working");
 
     public TestBlock(Properties properties) {
         super(properties);
-        this.stateDefinition.any()
-                .setValue(WORKING, false)
-                .setValue(FACING, Direction.NORTH);
+        this.registerDefaultState(
+                this.stateDefinition.any()
+                    .setValue(WORKING, false)
+                    .setValue(FACING, Direction.NORTH)
+        );
     }
 
     @Nullable

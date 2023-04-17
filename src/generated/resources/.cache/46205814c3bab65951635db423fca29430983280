@@ -1,10 +1,11 @@
-// 1.19.2	2023-04-02T16:44:42.7037276	Block States: refinedradiation
+// 1.19.2	2023-04-17T08:35:59.856848	Block States: refinedradiation
 26d6ba950bcf08185df48706a0ca043ca8e4cc75 assets/refinedradiation/blockstates/ctm_transparency_test.json
 73217144ed7a2d5e720401686cba7d7fdb7215a3 assets/refinedradiation/blockstates/deepslate_lead_ore.json
 cfd0f82dda013ca356aa02d98343251ef06a6cf8 assets/refinedradiation/blockstates/lead_block.json
 66e6141232559b591a96f303b7b461d54faf16ea assets/refinedradiation/blockstates/lead_ore.json
 5cb2a2234147aab6df55b7a9880aa13eb0f966b2 assets/refinedradiation/blockstates/raw_lead_block.json
 052cdc219dbf9c945f43125708c65367b7c790e4 assets/refinedradiation/blockstates/reinforced_concrete.json
+689f08323107e31731d500a4bed50b9bbc17d659 assets/refinedradiation/blockstates/steel_block.json
 04376b98535c2009bb4c80ef99c90d22d51568d4 assets/refinedradiation/blockstates/test.json
 5bcda5fc84a7c537cee6c60396497cd1060aad36 assets/refinedradiation/models/block/ctm_transparency_test.json
 c98e36834eac6d4406ada02e1ebe1e1f552f02c8 assets/refinedradiation/models/block/deepslate_lead_ore.json
@@ -12,4 +13,5 @@ c98e36834eac6d4406ada02e1ebe1e1f552f02c8 assets/refinedradiation/models/block/de
 35dfe2c2b3a8e3de94a7e27877aa9aa7b2521723 assets/refinedradiation/models/block/lead_ore.json
 29a6aa622c34592dd93e6723f97a232c032b500f assets/refinedradiation/models/block/raw_lead_block.json
 a59ffa72d075d3840fe89fbc9bb0fbc6a2aefdfe assets/refinedradiation/models/block/reinforced_concrete.json
+c4438cef39620cd135fe534b8d0f493cc8e11ad0 assets/refinedradiation/models/block/steel_block.json
 c9ff06b66a3303b2355930b781895606d11793ab assets/refinedradiation/models/block/test.json

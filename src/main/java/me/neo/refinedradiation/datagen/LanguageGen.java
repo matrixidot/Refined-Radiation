@@ -17,13 +17,17 @@ public class LanguageGen extends LanguageProvider {
         add(BlockInit.CTM_TRANSPARENCY_TEST.get(), "Transparency Test");
         add(BlockInit.REINFORCED_CONCRETE.get(), "Reinforced Concrete");
 
+        add(BlockInit.STEEL_BLOCK.get(), "Block of Steel");
 
         add(BlockInit.LEAD_BLOCK.get(), "Block of Lead");
         add(BlockInit.RAW_LEAD_BLOCK.get(), "Block of Raw Lead");
         add(BlockInit.LEAD_ORE.get(), "Lead Ore");
         add(BlockInit.DEEPSLATE_LEAD_ORE.get(), "Deepslate Lead Ore");
+
         add(BlockInit.TEST.get(), "Test Block");
 
+        add(ItemInit.STEEL_INGOT.get(), "Steel Ingot");
+        add(ItemInit.STEEL_NUGGET.get(), "Steel Nugget");
 
         add(ItemInit.LEAD_INGOT.get(), "Lead Ingot");
         add(ItemInit.LEAD_NUGGET.get(), "Lead Nugget");

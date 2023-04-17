@@ -27,12 +27,15 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(ItemTagsAC.PESTLE_AND_MORTAR).add(ItemInit.PESTLE_AND_MORTAR.get());
 
         tag(Tags.Items.INGOTS)
-                .add(ItemInit.LEAD_INGOT.get());
+                .add(ItemInit.LEAD_INGOT.get())
+                .add(ItemInit.STEEL_INGOT.get());
         tag(Tags.Items.STORAGE_BLOCKS)
+                .add(BlockInit.STEEL_BLOCK.get().asItem())
                 .add(BlockInit.LEAD_BLOCK.get().asItem())
                 .add(BlockInit.RAW_LEAD_BLOCK.get().asItem());
         tag(Tags.Items.NUGGETS)
-                .add(ItemInit.LEAD_NUGGET.get());
+                .add(ItemInit.LEAD_NUGGET.get())
+                .add(ItemInit.STEEL_NUGGET.get());
         tag(Tags.Items.RAW_MATERIALS)
                 .add(ItemInit.RAW_LEAD.get());
     }

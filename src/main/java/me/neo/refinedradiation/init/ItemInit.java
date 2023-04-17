@@ -32,6 +32,12 @@ public class ItemInit {
     public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
 
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+
+
     public static final RegistryObject<Item> INPUT_CONFIGURATION_CARD = ITEMS.register("input_configuration_card", () ->
             new InputConfigurationCardItem(new Item.Properties().tab(ModTab.RR).stacksTo(1)));
     public static final RegistryObject<Item> OUTPUT_CONFIGURATION_CARD = ITEMS.register("output_configuration_card", () ->

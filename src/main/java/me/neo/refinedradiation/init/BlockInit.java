@@ -21,7 +21,7 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RefinedRadiation.MOD_ID);
     /* TILES */
     public static final RegistryObject<Block> TEST = registerBlock("test",
-            () -> new TestBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.METAL)), ModTab.RR);
+            () -> new TestBlock(BlockBehaviour.Properties.of(Material.STONE).strength(5f).noOcclusion().requiresCorrectToolForDrops().sound(SoundType.METAL).lightLevel(state -> state.getValue(TestBlock.WORKING) ? 15 : 0)), ModTab.RR);
 
     /* BLOCKS */
     public static final RegistryObject<Block> CTM_TRANSPARENCY_TEST = registerBlock("ctm_transparency_test",
@@ -29,6 +29,9 @@ public class BlockInit {
 
     public static final RegistryObject<Block> REINFORCED_CONCRETE = registerBlock("reinforced_concrete",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), ModTab.RR);
+
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
 
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);

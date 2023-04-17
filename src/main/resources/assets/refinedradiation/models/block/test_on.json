@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "up": "refinedradiation:block/steel_chassis",
+    "down": "refinedradiation:block/steel_chassis",
+    "south": "refinedradiation:block/steel_chassis_energy",
+    "east": "refinedradiation:block/steel_chassis",
+    "north": "refinedradiation:block/electric_furnace",
+    "west": "refinedradiation:block/steel_chassis",
+    "particle": "refinedradiation:block/steel_chassis"
+  }
+}

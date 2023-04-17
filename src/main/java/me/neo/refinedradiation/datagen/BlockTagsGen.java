@@ -18,13 +18,14 @@ public class BlockTagsGen extends BlockTagsProvider {
     @Override
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(BlockInit.STEEL_BLOCK.get())
                 .add(BlockInit.LEAD_BLOCK.get())
                 .add(BlockInit.RAW_LEAD_BLOCK.get())
                 .add(BlockInit.LEAD_ORE.get())
                 .add(BlockInit.DEEPSLATE_LEAD_ORE.get())
                 .add(BlockInit.TEST.get());
-        tag(BlockTags.NEEDS_IRON_TOOL);
-
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(BlockInit.STEEL_BLOCK.get());
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockInit.LEAD_BLOCK.get())
                 .add(BlockInit.RAW_LEAD_BLOCK.get())
@@ -39,6 +40,7 @@ public class BlockTagsGen extends BlockTagsProvider {
                 .add(BlockInit.DEEPSLATE_LEAD_ORE.get());
 
         tag(BlockTagsAC.STORAGE_BLOCKS_LEAD).add(BlockInit.LEAD_BLOCK.get());
+        tag(BlockTagsAC.STORAGE_BLOCKS_STEEL).add(BlockInit.STEEL_BLOCK.get());
 
         tag(BlockTagsAC.ORES_LEAD).add(BlockInit.LEAD_ORE.get());
         tag(BlockTagsAC.ORES_LEAD).add(BlockInit.DEEPSLATE_LEAD_ORE.get());
