@@ -10,6 +10,8 @@ public class BlockTagsAC {
 
     public static final TagKey<Block> ORES_LEAD = forgeTag("ores/lead");
     public static final TagKey<Block> STORAGE_BLOCKS_LEAD = forgeTag("storage_blocks/lead");
+    public static final TagKey<Block> ORES_AURORIUM = forgeTag("ores/aurorium");
+    public static final TagKey<Block> STORAGE_BLOCKS_AURORIUM = forgeTag("storage_blocks/aurorium");
     public static final TagKey<Block> STORAGE_BLOCKS_STEEL = forgeTag("storage_blocks/steel");
 
 

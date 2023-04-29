@@ -5,6 +5,10 @@
     "refinedradiation:raw_lead_block",
     "refinedradiation:lead_ore",
     "refinedradiation:deepslate_lead_ore",
+    "refinedradiation:aurorium_block",
+    "refinedradiation:raw_aurorium_block",
+    "refinedradiation:aurorium_ore",
+    "refinedradiation:deepslate_aurorium_ore",
     "refinedradiation:test"
   ]
 }

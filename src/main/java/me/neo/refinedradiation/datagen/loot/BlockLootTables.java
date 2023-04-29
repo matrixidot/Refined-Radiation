@@ -16,6 +16,8 @@ public class BlockLootTables extends BlockLoot {
     private void oreDrops() {
         this.add(BlockInit.LEAD_ORE.get(), (block) -> createOreDrop(BlockInit.LEAD_ORE.get(), ItemInit.RAW_LEAD.get()));
         this.add(BlockInit.DEEPSLATE_LEAD_ORE.get(), (block) -> createOreDrop(BlockInit.DEEPSLATE_LEAD_ORE.get(), ItemInit.RAW_LEAD.get()));
+        this.add(BlockInit.AURORIUM_ORE.get(), (block) -> createOreDrop(BlockInit.AURORIUM_ORE.get(), ItemInit.RAW_AURORIUM.get()));
+        this.add(BlockInit.DEEPSLATE_AURORIUM_ORE.get(), (block) -> createOreDrop(BlockInit.DEEPSLATE_AURORIUM_ORE.get(), ItemInit.RAW_AURORIUM.get()));
     }
 
     private void blockDrops() {
@@ -24,9 +26,16 @@ public class BlockLootTables extends BlockLoot {
         this.dropSelf(BlockInit.TEST.get());
 
         this.dropSelf(BlockInit.STEEL_BLOCK.get());
+        this.dropSelf(BlockInit.STEEL_DUST_BLOCK.get());
 
         this.dropSelf(BlockInit.LEAD_BLOCK.get());
         this.dropSelf(BlockInit.RAW_LEAD_BLOCK.get());
+        this.dropSelf(BlockInit.LEAD_DUST_BLOCK.get());
+
+        this.dropSelf(BlockInit.AURORIUM_BLOCK.get());
+        this.dropSelf(BlockInit.RAW_AURORIUM_BLOCK.get());
+        this.dropSelf(BlockInit.AURORIUM_DUST_BLOCK.get());
+        this.dropSelf(BlockInit.RAW_AURORIUM_DUST_BLOCK.get());
     }
 
     @Override

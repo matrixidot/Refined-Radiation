@@ -18,21 +18,37 @@ public class LanguageGen extends LanguageProvider {
         add(BlockInit.REINFORCED_CONCRETE.get(), "Reinforced Concrete");
 
         add(BlockInit.STEEL_BLOCK.get(), "Block of Steel");
+        add(BlockInit.STEEL_DUST_BLOCK.get(), "Block of Dusted Steel");
 
         add(BlockInit.LEAD_BLOCK.get(), "Block of Lead");
         add(BlockInit.RAW_LEAD_BLOCK.get(), "Block of Raw Lead");
         add(BlockInit.LEAD_ORE.get(), "Lead Ore");
         add(BlockInit.DEEPSLATE_LEAD_ORE.get(), "Deepslate Lead Ore");
+        add(BlockInit.LEAD_DUST_BLOCK.get(), "Block of Dusted Lead");
+
+        add(BlockInit.AURORIUM_BLOCK.get(), "Block of Aurorium");
+        add(BlockInit.RAW_AURORIUM_BLOCK.get(), "Block of Raw Aurorium");
+        add(BlockInit.AURORIUM_ORE.get(), "Aurorium Ore");
+        add(BlockInit.DEEPSLATE_AURORIUM_ORE.get(), "Deepslate Aurorium Ore");
+        add(BlockInit.AURORIUM_DUST_BLOCK.get(), "Block of Dusted Aurorium");
+        add(BlockInit.RAW_AURORIUM_DUST_BLOCK.get(), "Block of Raw Dusted Aurorium");
 
         add(BlockInit.TEST.get(), "Test Block");
 
         add(ItemInit.STEEL_INGOT.get(), "Steel Ingot");
         add(ItemInit.STEEL_NUGGET.get(), "Steel Nugget");
+        add(ItemInit.STEEL_DUST.get(), "Steel Dust");
 
         add(ItemInit.LEAD_INGOT.get(), "Lead Ingot");
         add(ItemInit.LEAD_NUGGET.get(), "Lead Nugget");
         add(ItemInit.RAW_LEAD.get(), "Raw Lead");
+        add(ItemInit.LEAD_DUST.get(), "Lead Dust");
 
+        add(ItemInit.AURORIUM_INGOT.get(), "Aurorium Ingot");
+        add(ItemInit.AURORIUM_NUGGET.get(), "Aurorium Nugget");
+        add(ItemInit.RAW_AURORIUM.get(), "Raw Aurorium");
+        add(ItemInit.AURORIUM_DUST.get(), "Aurorium Dust");
+        add(ItemInit.RAW_AURORIUM_DUST.get(), "Raw Aurorium Dust");
 
         add(ItemInit.BURNED_POTATO.get(), "Burned Potato");
         add(ItemInit.POTASH.get(), "Potash");

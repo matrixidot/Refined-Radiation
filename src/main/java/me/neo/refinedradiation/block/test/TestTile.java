@@ -5,6 +5,7 @@ import me.neo.refinedradiation.init.Packets;
 import me.neo.refinedradiation.init.TileEntityInit;
 import me.neo.refinedradiation.networking.packet.EnergySyncS2C;
 import me.neo.refinedradiation.util.CustomEnergyStorage;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -137,7 +138,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("testtile");
+        return Component.literal("test").withStyle(ChatFormatting.RED);
     }
 
     @Nullable
@@ -196,7 +197,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
         }
         Optional<TestRecipe> recipe = tile.level.getRecipeManager().getRecipeFor(TestRecipe.Type.INSTANCE, container, tile.level);
 
-        if (itemHandler.getStackInSlot(1).getCount() + recipe.get().getOutputAmount() < itemHandler.getStackInSlot(1).getMaxStackSize()) {
+        if (itemHandler.getStackInSlot(1).getCount() + recipe.get().getOutputAmount() <= itemHandler.getStackInSlot(1).getMaxStackSize()) {
             itemHandler.extractItem(0, recipe.get().getIngredientAmount(0), false);
             itemHandler.setStackInSlot(1, new ItemStack(recipe.get().getResultItem().getItem(), itemHandler.getStackInSlot(1).getCount() + recipe.get().getOutputAmount()));
         }
@@ -231,4 +232,5 @@ public class TestTile extends BlockEntity implements MenuProvider {
     private static boolean canOutputAmount(SimpleContainer inventory, int outputSlotIndex) {
         return inventory.getItem(outputSlotIndex).getMaxStackSize() > inventory.getItem(outputSlotIndex).getCount();
     }
+
 }

@@ -4,6 +4,10 @@
     "refinedradiation:raw_lead_block",
     "refinedradiation:lead_ore",
     "refinedradiation:test",
-    "refinedradiation:deepslate_lead_ore"
+    "refinedradiation:deepslate_lead_ore",
+    "refinedradiation:raw_aurorium_dust_block",
+    "refinedradiation:aurorium_dust_block",
+    "refinedradiation:lead_dust_block",
+    "refinedradiation:steel_dust_block"
   ]
 }

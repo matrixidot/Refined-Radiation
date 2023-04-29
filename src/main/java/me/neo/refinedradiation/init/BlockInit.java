@@ -5,12 +5,10 @@ import me.neo.refinedradiation.block.test.TestBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -32,6 +30,8 @@ public class BlockInit {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
+    public static final RegistryObject<Block> STEEL_DUST_BLOCK = registerBlock("steel_dust_block",
+            () -> new SandBlock(4148570, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
 
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
@@ -41,13 +41,21 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)), ModTab.RR);
     public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)), ModTab.RR);
+    public static final RegistryObject<Block> LEAD_DUST_BLOCK = registerBlock("lead_dust_block",
+            () -> new SandBlock(6702711, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
 
-
-
-
-
-
-
+    public static final RegistryObject<Block> AURORIUM_BLOCK = registerBlock("aurorium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
+    public static final RegistryObject<Block> RAW_AURORIUM_BLOCK = registerBlock("raw_aurorium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)), ModTab.RR);
+    public static final RegistryObject<Block> AURORIUM_ORE = registerBlock("aurorium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)), ModTab.RR);
+    public static final RegistryObject<Block> DEEPSLATE_AURORIUM_ORE = registerBlock("deepslate_aurorium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)), ModTab.RR);
+    public static final RegistryObject<Block> AURORIUM_DUST_BLOCK = registerBlock("aurorium_dust_block",
+            () -> new SandBlock(11279452, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_RED).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
+    public static final RegistryObject<Block> RAW_AURORIUM_DUST_BLOCK = registerBlock("raw_aurorium_dust_block",
+            () -> new SandBlock(9911684, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_MAGENTA).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
 
 
 

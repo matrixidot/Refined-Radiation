@@ -26,11 +26,6 @@ import org.jetbrains.annotations.Nullable;
 
 public class TestBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-
-    public static final IntegerProperty EAST = IntegerProperty.create("east_out", 0 , 30);
-    public static final IntegerProperty WEST = IntegerProperty.create("west_out", 0 , 30);
-    public static final IntegerProperty UP = IntegerProperty.create("up_out", 0 , 30);
-    public static final IntegerProperty DOWN = IntegerProperty.create("down_out", 0 , 30);
     public static final BooleanProperty WORKING = BooleanProperty.create("working");
 
     public TestBlock(Properties properties) {

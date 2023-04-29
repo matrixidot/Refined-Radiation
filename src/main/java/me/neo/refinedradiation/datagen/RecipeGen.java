@@ -43,6 +43,10 @@ public class RecipeGen extends RecipeProvider {
         storageBlock(recipe, ItemInit.LEAD_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "lead_b");
         storageBlock(recipe, ItemInit.RAW_LEAD.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_lead_b");
 
+        storageBlock(recipe, ItemInit.AURORIUM_NUGGET.get(), ItemInit.LEAD_INGOT.get(), "aurorium_i");
+        storageBlock(recipe, ItemInit.AURORIUM_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "aurorium_b");
+        storageBlock(recipe, ItemInit.RAW_AURORIUM.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_aurorium_b");
+
         storageBlock(recipe, ItemInit.STEEL_NUGGET.get(), ItemInit.STEEL_INGOT.get(), "steel_i");
         storageBlock(recipe, ItemInit.STEEL_INGOT.get(), BlockInit.STEEL_BLOCK.get(), "steel_b");
 

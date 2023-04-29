@@ -1,5 +1,7 @@
 {
   "values": [
-    "refinedradiation:lead_block"
+    "refinedradiation:lead_block",
+    "refinedradiation:steel_block",
+    "refinedradiation:aurorium_block"
   ]
 }

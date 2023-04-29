@@ -31,10 +31,26 @@ public class ItemInit {
             new Item(new Item.Properties().tab(ModTab.RR)));
     public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> LEAD_DUST = ITEMS.register("lead_dust", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+
+    public static final RegistryObject<Item> AURORIUM_INGOT = ITEMS.register("aurorium_ingot", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> AURORIUM_NUGGET = ITEMS.register("aurorium_nugget", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> RAW_AURORIUM = ITEMS.register("raw_aurorium", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> AURORIUM_DUST = ITEMS.register("aurorium_dust", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> RAW_AURORIUM_DUST = ITEMS.register("raw_aurorium_dust", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+
 
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
     public static final RegistryObject<Item> STEEL_NUGGET = ITEMS.register("steel_nugget", () ->
+            new Item(new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> STEEL_DUST = ITEMS.register("steel_dust", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
 
 

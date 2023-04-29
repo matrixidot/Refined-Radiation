@@ -19,11 +19,20 @@ public class ItemModelGen extends ItemModelProvider {
         withExistingParent("test", modLoc("block/test"));
 
         withExistingParent("steel_block", modLoc("block/steel_block"));
+        withExistingParent("steel_dust_block", modLoc("block/steel_dust_block"));
 
         withExistingParent("lead_block", modLoc("block/lead_block"));
         withExistingParent("raw_lead_block", modLoc("block/raw_lead_block"));
         withExistingParent("lead_ore", modLoc("block/lead_ore"));
         withExistingParent("deepslate_lead_ore", modLoc("block/deepslate_lead_ore"));
+        withExistingParent("lead_dust_block", modLoc("block/lead_dust_block"));
+
+        withExistingParent("aurorium_block", modLoc("block/aurorium_block"));
+        withExistingParent("raw_aurorium_block", modLoc("block/raw_aurorium_block"));
+        withExistingParent("aurorium_ore", modLoc("block/aurorium_ore"));
+        withExistingParent("deepslate_aurorium_ore", modLoc("block/deepslate_aurorium_ore"));
+        withExistingParent("aurorium_dust_block", modLoc("block/aurorium_dust_block"));
+        withExistingParent("raw_aurorium_dust_block", modLoc("block/raw_aurorium_dust_block"));
 
         ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
@@ -37,10 +46,18 @@ public class ItemModelGen extends ItemModelProvider {
 
         builder(itemGenerated, "steel_ingot");
         builder(itemGenerated, "steel_nugget");
+        builder(itemGenerated, "steel_dust");
 
         builder(itemGenerated, "lead_ingot");
         builder(itemGenerated, "lead_nugget");
         builder(itemGenerated, "raw_lead");
+        builder(itemGenerated, "lead_dust");
+
+        builder(itemGenerated, "aurorium_ingot");
+        builder(itemGenerated, "aurorium_nugget");
+        builder(itemGenerated, "raw_aurorium");
+        builder(itemGenerated, "aurorium_dust");
+        builder(itemGenerated, "raw_aurorium_dust");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

@@ -28,15 +28,20 @@ public class ItemTagsGen extends ItemTagsProvider {
 
         tag(Tags.Items.INGOTS)
                 .add(ItemInit.LEAD_INGOT.get())
+                .add(ItemInit.AURORIUM_INGOT.get())
                 .add(ItemInit.STEEL_INGOT.get());
         tag(Tags.Items.STORAGE_BLOCKS)
                 .add(BlockInit.STEEL_BLOCK.get().asItem())
                 .add(BlockInit.LEAD_BLOCK.get().asItem())
-                .add(BlockInit.RAW_LEAD_BLOCK.get().asItem());
+                .add(BlockInit.RAW_LEAD_BLOCK.get().asItem())
+                .add(BlockInit.AURORIUM_BLOCK.get().asItem())
+                .add(BlockInit.RAW_AURORIUM_BLOCK.get().asItem());
         tag(Tags.Items.NUGGETS)
                 .add(ItemInit.LEAD_NUGGET.get())
+                .add(ItemInit.AURORIUM_NUGGET.get())
                 .add(ItemInit.STEEL_NUGGET.get());
         tag(Tags.Items.RAW_MATERIALS)
-                .add(ItemInit.RAW_LEAD.get());
+                .add(ItemInit.RAW_LEAD.get())
+                .add(ItemInit.RAW_AURORIUM.get());
     }
 }
