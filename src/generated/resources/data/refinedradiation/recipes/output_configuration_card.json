@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    },
+    "P": {
+      "item": "minecraft:pink_dye"
+    },
+    "R": {
+      "item": "minecraft:red_dye"
+    },
+    "S": {
+      "item": "refinedradiation:steel_ingot"
+    },
+    "Y": {
+      "item": "minecraft:yellow_dye"
+    }
+  },
+  "pattern": [
+    "SRS",
+    "OYP",
+    "SGS"
+  ],
+  "result": {
+    "item": "refinedradiation:output_configuration_card"
+  }
+}

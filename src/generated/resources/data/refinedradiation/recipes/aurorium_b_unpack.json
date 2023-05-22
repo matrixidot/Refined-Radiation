@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "refinedradiation:lead_block"
+      "item": "refinedradiation:aurorium_block"
     }
   ],
   "result": {

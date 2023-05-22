@@ -1,5 +1,6 @@
 package me.neo.refinedradiation.block.test;
 
+import me.neo.refinedradiation.RefinedRadiation;
 import me.neo.refinedradiation.block.WrappedHandler;
 import me.neo.refinedradiation.init.Packets;
 import me.neo.refinedradiation.init.TileEntityInit;
@@ -32,6 +33,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
+import java.awt.*;
 import java.util.Optional;
 
 public class TestTile extends BlockEntity implements MenuProvider {
@@ -138,7 +140,7 @@ public class TestTile extends BlockEntity implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("test").withStyle(ChatFormatting.RED);
+        return Component.translatable(RefinedRadiation.MOD_ID + ".container.test");
     }
 
     @Nullable

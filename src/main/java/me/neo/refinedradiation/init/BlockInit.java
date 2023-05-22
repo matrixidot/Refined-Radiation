@@ -31,7 +31,7 @@ public class BlockInit {
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
     public static final RegistryObject<Block> STEEL_DUST_BLOCK = registerBlock("steel_dust_block",
-            () -> new SandBlock(4148570, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
+            () -> new SandBlock(4148570, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_CYAN).strength(0.5F).sound(SoundType.SAND).requiresCorrectToolForDrops()), ModTab.RR);
 
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
@@ -42,7 +42,7 @@ public class BlockInit {
     public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)), ModTab.RR);
     public static final RegistryObject<Block> LEAD_DUST_BLOCK = registerBlock("lead_dust_block",
-            () -> new SandBlock(6702711, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
+            () -> new SandBlock(6702711, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_PURPLE).strength(0.5F).sound(SoundType.SAND).requiresCorrectToolForDrops()), ModTab.RR);
 
     public static final RegistryObject<Block> AURORIUM_BLOCK = registerBlock("aurorium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)), ModTab.RR);
@@ -53,9 +53,9 @@ public class BlockInit {
     public static final RegistryObject<Block> DEEPSLATE_AURORIUM_ORE = registerBlock("deepslate_aurorium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)), ModTab.RR);
     public static final RegistryObject<Block> AURORIUM_DUST_BLOCK = registerBlock("aurorium_dust_block",
-            () -> new SandBlock(11279452, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_RED).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
+            () -> new SandBlock(11279452, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_RED).strength(0.5F).sound(SoundType.SAND).requiresCorrectToolForDrops()), ModTab.RR);
     public static final RegistryObject<Block> RAW_AURORIUM_DUST_BLOCK = registerBlock("raw_aurorium_dust_block",
-            () -> new SandBlock(9911684, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_MAGENTA).strength(0.5F).sound(SoundType.SAND)), ModTab.RR);
+            () -> new SandBlock(9911684, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_MAGENTA).strength(0.5F).sound(SoundType.SAND).requiresCorrectToolForDrops()), ModTab.RR);
 
 
 

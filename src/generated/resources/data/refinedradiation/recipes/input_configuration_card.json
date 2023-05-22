@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_dye"
+    },
+    "C": {
+      "item": "minecraft:cyan_dye"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "P": {
+      "item": "minecraft:purple_dye"
+    },
+    "S": {
+      "item": "refinedradiation:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SLS",
+    "CBP",
+    "SGS"
+  ],
+  "result": {
+    "item": "refinedradiation:input_configuration_card"
+  }
+}

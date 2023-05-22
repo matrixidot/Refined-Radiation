@@ -17,7 +17,7 @@ public class TestMenu extends AbstractContainerMenu {
     public final TestTile tile;
     private final Level level;
     private final ContainerData data;
-    public static int machineSlots = 13;
+    public static int machineSlots = 12;
 
     public TestMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
         this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(4));
@@ -34,8 +34,8 @@ public class TestMenu extends AbstractContainerMenu {
 
 
         this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, 0, 56, 35));
-            this.addSlot(new SlotItemHandler(handler, 1, 125, 35));
+            this.addSlot(new SlotItemHandler(handler, 0, 53, 37));
+            this.addSlot(new SlotItemHandler(handler, 1, 122, 37));
         });
         addMachineSlots(2);
 
@@ -52,7 +52,7 @@ public class TestMenu extends AbstractContainerMenu {
     public int getScaledProgress() {
         int progress = this.data.get(0);
         int maxProgress = this.data.get(1);
-        int progressArrowSize = 22;
+        int progressArrowSize = 24;
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }
 
@@ -123,33 +123,30 @@ public class TestMenu extends AbstractContainerMenu {
     private void addPlayerInventory(Inventory playerInventory) {
         for (int i = 0; i < 3; ++i) {
             for (int l = 0; l < 9; ++l) {
-                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 8 + l * 18, 84 + i * 18));
+                this.addSlot(new Slot(playerInventory, l + i * 9 + 9, 31 + l * 18, 82 + i * 18));
             }
         }
     }
 
     private void addPlayerHotbar(Inventory playerInventory) {
         for (int i = 0; i < 9; ++i) {
-            this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
+            this.addSlot(new Slot(playerInventory, i, 31 + i * 18, 140));
         }
-    }
-
-    private void addWingSlots(int StartingIndex, int x) {
-        this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, StartingIndex, x, 13));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 1, x + 21, 13));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 2, x, 31));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 3, x + 21, 31));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 4, x, 53));
-            this.addSlot(new SlotItemHandler(handler, StartingIndex + 5, x + 21, 53));
-        });
     }
 
     private void addMachineSlots(int StartingIndex) {
         this.tile.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new SlotItemHandler(handler, StartingIndex, 29, 53));
+            this.addSlot(new SlotItemHandler(handler, StartingIndex, 3, 135));
+            for (int i = 0; i < 3; ++i) {
+                for (int l = 0; l < 2; ++l) {
+                    this.addSlot(new SlotItemHandler(handler, l + i * 2 + StartingIndex + 1, -19 + l * 18, 19 + i * 18));
+                }
+            }
+            for (int i = 0; i < 4; ++i) {
+                this.addSlot(new SlotItemHandler(handler, i + StartingIndex + 7, -19, 79 + i * 18));
+            }
+            this.addSlot(new SlotItemHandler(handler, StartingIndex + 11, 195, 19));
         });
-        addWingSlots(StartingIndex + 1,-31);
-        addWingSlots(StartingIndex + 7,170);
+
     }
 }

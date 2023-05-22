@@ -24,6 +24,14 @@ public class RecipeGen extends RecipeProvider {
                 .define('W', Items.ANDESITE_WALL).define('S', Items.ANDESITE_SLAB)
                 .unlockedBy("has_item", has(Items.ANDESITE)).save(recipe, modId("pestle_and_mortar"));
 
+        ShapedRecipeBuilder.shaped(ItemInit.INPUT_CONFIGURATION_CARD.get(), 1).pattern("SLS").pattern("CBP").pattern("SGS")
+                .define('S', ItemInit.STEEL_INGOT.get()).define('L', Items.LIGHT_BLUE_DYE).define('C', Items.CYAN_DYE).define('B', Items.BLUE_DYE).define('P', Items.PURPLE_DYE).define('G', Items.GOLD_INGOT)
+                .unlockedBy("has_item", has(ItemInit.STEEL_INGOT.get())).save(recipe, modId("input_configuration_card"));
+        ShapedRecipeBuilder.shaped(ItemInit.OUTPUT_CONFIGURATION_CARD.get(), 1).pattern("SRS").pattern("OYP").pattern("SGS")
+                .define('S', ItemInit.STEEL_INGOT.get()).define('R', Items.RED_DYE).define('O', Items.ORANGE_DYE).define('Y', Items.YELLOW_DYE).define('P', Items.PINK_DYE).define('G', Items.GOLD_INGOT)
+                .unlockedBy("has_item", has(ItemInit.STEEL_INGOT.get())).save(recipe, modId("output_configuration_card"));
+
+
         ShapelessRecipeBuilder.shapeless(ItemInit.POTASH.get(), 2).requires(ItemInit.BURNED_POTATO.get(), 1).requires(ItemInit.PESTLE_AND_MORTAR.get(), 1)
                 .unlockedBy("has_item", has(ItemInit.BURNED_POTATO.get())).save(recipe, modId("potash"));
         ShapelessRecipeBuilder.shapeless(ItemInit.POTASSIUM_DUST.get(), 1).requires(ItemInit.POTASH.get(), 4)
@@ -42,13 +50,18 @@ public class RecipeGen extends RecipeProvider {
         storageBlock(recipe, ItemInit.LEAD_NUGGET.get(), ItemInit.LEAD_INGOT.get(), "lead_i");
         storageBlock(recipe, ItemInit.LEAD_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "lead_b");
         storageBlock(recipe, ItemInit.RAW_LEAD.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_lead_b");
+        storageBlock(recipe, ItemInit.LEAD_DUST.get(), BlockInit.LEAD_DUST_BLOCK.get(), "lead_db");
 
-        storageBlock(recipe, ItemInit.AURORIUM_NUGGET.get(), ItemInit.LEAD_INGOT.get(), "aurorium_i");
-        storageBlock(recipe, ItemInit.AURORIUM_INGOT.get(), BlockInit.LEAD_BLOCK.get(), "aurorium_b");
-        storageBlock(recipe, ItemInit.RAW_AURORIUM.get(), BlockInit.RAW_LEAD_BLOCK.get(), "raw_aurorium_b");
+        storageBlock(recipe, ItemInit.AURORIUM_NUGGET.get(), ItemInit.AURORIUM_INGOT.get(), "aurorium_i");
+        storageBlock(recipe, ItemInit.AURORIUM_INGOT.get(), BlockInit.AURORIUM_BLOCK.get(), "aurorium_b");
+        storageBlock(recipe, ItemInit.RAW_AURORIUM.get(), BlockInit.RAW_AURORIUM_BLOCK.get(), "raw_aurorium_b");
+        storageBlock(recipe, ItemInit.AURORIUM_DUST.get(), BlockInit.AURORIUM_DUST_BLOCK.get(), "aurorium_db");
+        storageBlock(recipe, ItemInit.RAW_AURORIUM_DUST.get(), BlockInit.RAW_AURORIUM_DUST_BLOCK.get(), "raw_aurorium_db");
 
         storageBlock(recipe, ItemInit.STEEL_NUGGET.get(), ItemInit.STEEL_INGOT.get(), "steel_i");
         storageBlock(recipe, ItemInit.STEEL_INGOT.get(), BlockInit.STEEL_BLOCK.get(), "steel_b");
+        storageBlock(recipe, ItemInit.STEEL_DUST.get(), BlockInit.STEEL_DUST_BLOCK.get(), "steel_db");
+
 
         smelt(recipe, ItemInit.RAW_LEAD.get(), ItemInit.LEAD_INGOT.get(), .7f, 200, "lead_i");
 

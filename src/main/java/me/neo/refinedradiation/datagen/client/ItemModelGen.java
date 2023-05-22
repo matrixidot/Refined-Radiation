@@ -58,6 +58,11 @@ public class ItemModelGen extends ItemModelProvider {
         builder(itemGenerated, "raw_aurorium");
         builder(itemGenerated, "aurorium_dust");
         builder(itemGenerated, "raw_aurorium_dust");
+
+        builder(itemGenerated, "hazmat_suit_helmet");
+        builder(itemGenerated, "hazmat_suit_chestplate");
+        builder(itemGenerated, "hazmat_suit_leggings");
+        builder(itemGenerated, "hazmat_suit_boots");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

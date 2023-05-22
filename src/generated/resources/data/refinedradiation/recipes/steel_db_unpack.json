@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "refinedradiation:steel_dust_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "refinedradiation:steel_dust"
+  }
+}

@@ -58,10 +58,15 @@ public class LanguageGen extends LanguageProvider {
         add(ItemInit.POTASSIUM_IODIDE_PILL.get(), "Potassium Iodide Pill");
         add(ItemInit.PESTLE_AND_MORTAR.get(), "Pestle and Mortar");
 
+        add(ItemInit.HAZMAT_SUIT_HELMET.get(), "Hazmat Suit Helmet");
+        add(ItemInit.HAZMAT_SUIT_CHESTPLATE.get(), "Hazmat Suit Chestplate");
+        add(ItemInit.HAZMAT_SUIT_LEGGING.get(), "Hazmat Suit Leggings");
+        add(ItemInit.HAZMAT_SUIT_BOOTS.get(), "Hazmat Suit Boots");
+
         add(ItemInit.INPUT_CONFIGURATION_CARD.get(), "Input Configuration Card");
         add(ItemInit.OUTPUT_CONFIGURATION_CARD.get(), "Output Configuration Card");
 
-        add("testtile", "Test Tile");
+        add("refinedradiation.container.test", "Electric Furnace");
 
         add("refinedradiation.lightblue.true", "§b█ §7Light Blue: §bTrue");
         add("refinedradiation.lightblue.false", "§8█ §7Light Blue: §cFalse");

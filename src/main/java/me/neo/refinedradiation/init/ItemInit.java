@@ -1,10 +1,12 @@
 package me.neo.refinedradiation.init;
 
 import me.neo.refinedradiation.RefinedRadiation;
+import me.neo.refinedradiation.custom.item.HazmatSuitArmorItem;
 import me.neo.refinedradiation.custom.item.InputConfigurationCardItem.InputConfigurationCardItem;
 import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem.OutputConfigurationCardItem;
 import me.neo.refinedradiation.custom.item.PestleAndMortarItem;
 import me.neo.refinedradiation.custom.item.PotassiumIodinePillItem;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -64,6 +66,19 @@ public class ItemInit {
 
     public static final RegistryObject<Item> PESTLE_AND_MORTAR = ITEMS.register("pestle_and_mortar", () ->
             new PestleAndMortarItem(new Item.Properties().tab(ModTab.RR).durability(48)));
+
+    public static final RegistryObject<Item> HAZMAT_SUIT_HELMET = ITEMS.register("hazmat_suit_helmet",
+            () -> new HazmatSuitArmorItem(ArmorMaterialInit.HAZMAT_SUIT, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> HAZMAT_SUIT_CHESTPLATE = ITEMS.register("hazmat_suit_chestplate",
+            () -> new HazmatSuitArmorItem(ArmorMaterialInit.HAZMAT_SUIT, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> HAZMAT_SUIT_LEGGING = ITEMS.register("hazmat_suit_leggings",
+            () -> new HazmatSuitArmorItem(ArmorMaterialInit.HAZMAT_SUIT, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModTab.RR)));
+    public static final RegistryObject<Item> HAZMAT_SUIT_BOOTS = ITEMS.register("hazmat_suit_boots",
+            () -> new HazmatSuitArmorItem(ArmorMaterialInit.HAZMAT_SUIT, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModTab.RR)));
 
 
     public static void register(IEventBus eventBus) {

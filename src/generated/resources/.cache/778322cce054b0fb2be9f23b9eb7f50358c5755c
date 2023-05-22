@@ -1,4 +1,4 @@
-// 1.19.2	2023-04-21T12:22:48.362392	Item Models: refinedradiation
+// 1.19.2	2023-05-22T11:31:31.6689567	Item Models: refinedradiation
 dd3dedc9452eea9723240d4476a1b4011b31c860 assets/refinedradiation/models/item/aurorium_block.json
 7a2ebf2e1f84d2390323d5403c9e36c232a8f20b assets/refinedradiation/models/item/aurorium_dust.json
 2fcf1d83d8bd415bba22e667aeca98f745a085a2 assets/refinedradiation/models/item/aurorium_dust_block.json
@@ -9,6 +9,10 @@ e9c0dba9b80e6ce9e66d927c9010a25bc2363e99 assets/refinedradiation/models/item/aur
 82fe8efc404c6491efef0fa2fd77386264a4c3ca assets/refinedradiation/models/item/ctm_transparency_test.json
 558a9a8fa29928226e30b06e7b6362c2c1e7e15f assets/refinedradiation/models/item/deepslate_aurorium_ore.json
 d707570764c284ecbf5fd4ad733e485f6f80928c assets/refinedradiation/models/item/deepslate_lead_ore.json
+7e9a5f160e6462380273822a42d65860a064fed8 assets/refinedradiation/models/item/hazmat_suit_boots.json
+fccaa49ffa526b8d12ce069f65ddf519a8ebe174 assets/refinedradiation/models/item/hazmat_suit_chestplate.json
+0e93cb2869e1af769511f36e86d8ef777a0d9771 assets/refinedradiation/models/item/hazmat_suit_helmet.json
+5286ab2bbe2446bcd016eb22dd4015319afd36fa assets/refinedradiation/models/item/hazmat_suit_leggings.json
 bac6f475aaf762ec827511e04d4b45fcc0e10923 assets/refinedradiation/models/item/iodine_dust.json
 1b143f3cdd70bc50872b36caaeec0a3c5501766f assets/refinedradiation/models/item/kelp_dust.json
 794eed2e40f44d713661539d1ec6631fd7ce55ba assets/refinedradiation/models/item/lead_block.json

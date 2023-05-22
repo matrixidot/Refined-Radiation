@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "refinedradiation:lead_ingot"
+      "item": "refinedradiation:aurorium_ingot"
     }
   ],
   "result": {

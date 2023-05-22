@@ -9,6 +9,7 @@
     "oPortalTimeMixin"
   ],
   "client": [
+    "HazmatSuitHelmetOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1

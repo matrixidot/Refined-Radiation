@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lead_block": {
+    "has_aurorium_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "refinedradiation:lead_block"
+              "refinedradiation:aurorium_block"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lead_block",
+      "has_aurorium_block",
       "has_the_recipe"
     ]
   ],

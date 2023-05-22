@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_lead_ingot": {
+    "has_aurorium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "refinedradiation:lead_ingot"
+              "refinedradiation:aurorium_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_lead_ingot",
+      "has_aurorium_ingot",
       "has_the_recipe"
     ]
   ],

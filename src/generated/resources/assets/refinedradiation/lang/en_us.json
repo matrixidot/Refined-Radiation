@@ -21,6 +21,10 @@
   "item.refinedradiation.aurorium_ingot": "Aurorium Ingot",
   "item.refinedradiation.aurorium_nugget": "Aurorium Nugget",
   "item.refinedradiation.burned_potato": "Burned Potato",
+  "item.refinedradiation.hazmat_suit_boots": "Hazmat Suit Boots",
+  "item.refinedradiation.hazmat_suit_chestplate": "Hazmat Suit Chestplate",
+  "item.refinedradiation.hazmat_suit_helmet": "Hazmat Suit Helmet",
+  "item.refinedradiation.hazmat_suit_leggings": "Hazmat Suit Leggings",
   "item.refinedradiation.input_configuration_card": "Input Configuration Card",
   "item.refinedradiation.iodine_dust": "Iodine Dust",
   "item.refinedradiation.kelp_dust": "Kelp Dust",
@@ -41,6 +45,7 @@
   "itemGroup.rrtab": "Refined Radiation",
   "refinedradiation.blue.false": "§8█ §7Blue: §cFalse",
   "refinedradiation.blue.true": "§9█ §7Blue: §bTrue",
+  "refinedradiation.container.test": "Electric Furnace",
   "refinedradiation.cyan.false": "§8█ §7Cyan: §cFalse",
   "refinedradiation.cyan.true": "§3█ §7Cyan: §bTrue",
   "refinedradiation.lightblue.false": "§8█ §7Light Blue: §cFalse",
@@ -54,6 +59,5 @@
   "refinedradiation.red.false": "§8█ §7Red: §cFalse",
   "refinedradiation.red.true": "§c█ §7Red: §bTrue",
   "refinedradiation.yellow.false": "§8█ §7Yellow: §cFalse",
-  "refinedradiation.yellow.true": "§e█ §7Yellow: §bTrue",
-  "testtile": "Test Tile"
+  "refinedradiation.yellow.true": "§e█ §7Yellow: §bTrue"
 }
