@@ -17,6 +17,11 @@ public class LanguageGen extends LanguageProvider {
         add(BlockInit.CTM_TRANSPARENCY_TEST.get(), "Transparency Test");
         add(BlockInit.REINFORCED_CONCRETE.get(), "Reinforced Concrete");
 
+        add(BlockInit.RUBBER_TREE_LEAVES.get(), "Rubber Tree Leaves");
+        add(BlockInit.RUBBER_TREE_LOG.get(), "Rubber Tree Log");
+        add(BlockInit.STRIPPED_RUBBER_TREE_LOG.get(), "Stripped Rubber Tree Log");
+        add(BlockInit.RUBBER_TREE_PLANKS.get(), "Rubber Tree Planks");
+
         add(BlockInit.STEEL_BLOCK.get(), "Block of Steel");
         add(BlockInit.STEEL_DUST_BLOCK.get(), "Block of Dusted Steel");
 

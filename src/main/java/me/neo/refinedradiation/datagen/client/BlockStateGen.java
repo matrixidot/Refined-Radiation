@@ -3,6 +3,7 @@ package me.neo.refinedradiation.datagen.client;
 import me.neo.refinedradiation.RefinedRadiation;
 import me.neo.refinedradiation.init.BlockInit;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -14,6 +15,10 @@ public class BlockStateGen extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlock(BlockInit.REINFORCED_CONCRETE.get());
         simpleBlock(BlockInit.CTM_TRANSPARENCY_TEST.get());
+
+        axisBlock((RotatedPillarBlock) BlockInit.STRIPPED_RUBBER_TREE_LOG.get(), modLoc("block/stripped_rubber_tree_log"), modLoc("block/stripped_rubber_tree_log_top"));
+        axisBlock((RotatedPillarBlock) BlockInit.RUBBER_TREE_LOG.get(), modLoc("block/rubber_tree_log"), modLoc("block/rubber_tree_log_top"));
+        simpleBlock(BlockInit.RUBBER_TREE_PLANKS.get());
 
         simpleBlock(BlockInit.STEEL_BLOCK.get());
         simpleBlock(BlockInit.STEEL_DUST_BLOCK.get());

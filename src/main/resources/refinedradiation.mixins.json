@@ -5,11 +5,11 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "refinedradiation.refmap.json",
   "mixins": [
+    "HazmatSuitHelmetOverlayMixin",
     "NauseaMixin",
     "oPortalTimeMixin"
   ],
   "client": [
-    "HazmatSuitHelmetOverlayMixin"
   ],
   "injectors": {
     "defaultRequire": 1

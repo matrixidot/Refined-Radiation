@@ -39,7 +39,7 @@ public abstract class NauseaMixin {
     private void renderRadiationOverlay(float pScalar) {
         int i = getMinecraft().getWindow().getGuiScaledWidth();
         int j = getMinecraft().getWindow().getGuiScaledHeight();
-        double d0 = Mth.lerp((double)pScalar, 2.0D, 1.0D);
+        double d0 = Mth.lerp(pScalar, 2.0D, 1.0D);
         float f = 0.2F * pScalar;
         float f1 = 0.4F * pScalar;
         float f2 = 0.2F * pScalar;

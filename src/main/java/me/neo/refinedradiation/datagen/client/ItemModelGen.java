@@ -17,6 +17,11 @@ public class ItemModelGen extends ItemModelProvider {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
         withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
         withExistingParent("test", modLoc("block/test"));
+        withExistingParent("rubber_tree_leaves", modLoc("block/rubber_tree_leaves"));
+        withExistingParent("rubber_tree_log", modLoc("block/rubber_tree_log"));
+        withExistingParent("stripped_rubber_tree_log", modLoc("block/stripped_rubber_tree_log"));
+        withExistingParent("rubber_tree_planks", modLoc("block/rubber_tree_planks"));
+
 
         withExistingParent("steel_block", modLoc("block/steel_block"));
         withExistingParent("steel_dust_block", modLoc("block/steel_dust_block"));

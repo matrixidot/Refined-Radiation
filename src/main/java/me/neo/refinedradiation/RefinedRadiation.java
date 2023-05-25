@@ -5,7 +5,9 @@ import me.neo.refinedradiation.block.test.TestScreen;
 import me.neo.refinedradiation.custom.item.InputConfigurationCardItem.InputConfigurationCardItem;
 import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem.OutputConfigurationCardItem;
 import me.neo.refinedradiation.init.*;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.BiomeColors;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(RefinedRadiation.MOD_ID)
@@ -31,6 +34,7 @@ public class RefinedRadiation {
         MenuInit.register(modEventBus);
         RecipeInit.register(modEventBus);
         EffectInit.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

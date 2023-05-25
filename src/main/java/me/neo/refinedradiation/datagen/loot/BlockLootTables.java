@@ -36,6 +36,11 @@ public class BlockLootTables extends BlockLoot {
         this.dropSelf(BlockInit.RAW_AURORIUM_BLOCK.get());
         this.dropSelf(BlockInit.AURORIUM_DUST_BLOCK.get());
         this.dropSelf(BlockInit.RAW_AURORIUM_DUST_BLOCK.get());
+
+        this.dropSelf(BlockInit.RUBBER_TREE_LEAVES.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_LOG.get());
+        this.dropSelf(BlockInit.STRIPPED_RUBBER_TREE_LOG.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_PLANKS.get());
     }
 
     @Override

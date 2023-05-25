@@ -1,4 +1,4 @@
-// 1.19.2	2023-04-21T09:44:08.2592551	LootTables
+// 1.19.2	2023-05-24T13:23:47.3312377	LootTables
 4caeba9b5c696fd01f0f335f82b760b1696f9584 data/refinedradiation/loot_tables/blocks/aurorium_block.json
 b5f80a9cae2d0b3aaa808fba2ac5f7d1b19777e5 data/refinedradiation/loot_tables/blocks/aurorium_dust_block.json
 4e2a5f8151293a75e30fd90109d9ec02fa343cb5 data/refinedradiation/loot_tables/blocks/aurorium_ore.json
@@ -12,6 +12,10 @@ a02785056ee515f6e3656f331ef8dc651844067a data/refinedradiation/loot_tables/block
 291d008e0bee8c7b2b184428166056640a35322b data/refinedradiation/loot_tables/blocks/raw_aurorium_dust_block.json
 7735c6596f8ea7b4c384ea8dea1a2dcb513261e6 data/refinedradiation/loot_tables/blocks/raw_lead_block.json
 ceb0d93be79fc705523f731dccb3630e2d730318 data/refinedradiation/loot_tables/blocks/reinforced_concrete.json
+ebab71ca03be64b739265b978cae5f827e9d741a data/refinedradiation/loot_tables/blocks/rubber_tree_leaves.json
+16e0ddce9033d79b92a5319671cb4e89d4dd17c9 data/refinedradiation/loot_tables/blocks/rubber_tree_log.json
+d8d02c7c85c6f8141cb7415f890ee7e4d51be83e data/refinedradiation/loot_tables/blocks/rubber_tree_planks.json
 57b9769b7532b94567ce77fc4bd3e6b7207d58fd data/refinedradiation/loot_tables/blocks/steel_block.json
 300c1335eec2ea5096fea61e605e580cf5388038 data/refinedradiation/loot_tables/blocks/steel_dust_block.json
+5aca858dc1bc6baac584d2c60c2e4c5e20c9d2e4 data/refinedradiation/loot_tables/blocks/stripped_rubber_tree_log.json
 3ec0b7cc408cd31a4b109f91b31b7c4971b22b52 data/refinedradiation/loot_tables/blocks/test.json

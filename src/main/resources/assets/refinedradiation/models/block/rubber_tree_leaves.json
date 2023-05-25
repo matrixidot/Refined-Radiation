@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "refinedradiation:block/rubber_tree_leaves"
+  }
+}
