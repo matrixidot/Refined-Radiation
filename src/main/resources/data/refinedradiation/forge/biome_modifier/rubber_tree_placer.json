@@ -1,0 +1,5 @@
+{
+  "type": "refinedradiation:vegetal",
+  "biomes": "#forge:is_jungle",
+  "feature": "refinedradiation:rubber_tree_placed"
+}

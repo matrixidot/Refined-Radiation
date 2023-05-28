@@ -34,6 +34,8 @@ public class RefinedRadiation {
         MenuInit.register(modEventBus);
         RecipeInit.register(modEventBus);
         EffectInit.register(modEventBus);
+        BiomeModifierInit.register(modEventBus);
+        PlacementFeatureInit.register(modEventBus);
 
 
         modEventBus.addListener(this::commonSetup);

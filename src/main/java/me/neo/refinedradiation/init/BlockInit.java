@@ -2,6 +2,7 @@ package me.neo.refinedradiation.init;
 
 import me.neo.refinedradiation.RefinedRadiation;
 import me.neo.refinedradiation.block.test.TestBlock;
+import me.neo.refinedradiation.world.feature.tree.RubberTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -27,6 +28,8 @@ public class BlockInit {
 
     public static final RegistryObject<Block> RUBBER_TREE_LEAVES = registerBlock("rubber_tree_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_SAPLING = registerBlock("rubber_tree_sapling",
+            () -> new SaplingBlock(new RubberTreeGrower(),BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModTab.RR);
     public static final RegistryObject<Block> RUBBER_TREE_LOG = registerBlock("rubber_tree_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)), ModTab.RR);
     public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_LOG = registerBlock("stripped_rubber_tree_log",
