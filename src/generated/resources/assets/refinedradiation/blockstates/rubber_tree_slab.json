@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "refinedradiation:block/rubber_tree_slab"
+    },
+    "type=double": {
+      "model": "refinedradiation:block/rubber_tree_planks"
+    },
+    "type=top": {
+      "model": "refinedradiation:block/rubber_tree_slab_top"
+    }
+  }
+}

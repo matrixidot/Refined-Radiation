@@ -2,12 +2,14 @@ package me.neo.refinedradiation.init;
 
 import me.neo.refinedradiation.RefinedRadiation;
 import me.neo.refinedradiation.block.test.TestBlock;
+import me.neo.refinedradiation.custom.entity.ModWallSignBlock;
 import me.neo.refinedradiation.world.feature.tree.RubberTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +38,34 @@ public class BlockInit {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)), ModTab.RR);
     public static final RegistryObject<Block> RUBBER_TREE_PLANKS = registerBlock("rubber_tree_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)), ModTab.RR);
+
+    public static final RegistryObject<Block> STRIPPED_RUBBER_TREE_WOOD = registerBlock("stripped_rubber_tree_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_WOOD = registerBlock("rubber_tree_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_STAIRS = registerBlock("rubber_tree_stairs",
+            () -> new StairBlock(() -> RUBBER_TREE_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_SLAB = registerBlock("rubber_tree_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_FENCE = registerBlock("rubber_tree_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_FENCE_GATE = registerBlock("rubber_tree_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_BUTTON = registerBlock("rubber_tree_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModTab.RR);
+    public static final RegistryObject<Block> RUBBER_TREE_PRESSURE_PLATE = registerBlock("rubber_tree_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModTab.RR);
+
+    public static final RegistryObject<Block> RUBBER_TREE_WALL_SIGN = registerBlockWithoutBlockItem("rubber_tree_wall_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodTypesInit.RUBBER_TREE));
+    public static final RegistryObject<Block> RUBBER_TREE_STANDING_SIGN = registerBlockWithoutBlockItem("rubber_tree_standing_sign",
+            () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodTypesInit.RUBBER_TREE));
+
+    public static final RegistryObject<Block> RUBBER_TREE_DOOR = registerBlock("rubber_tree_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), ModTab.RR);
+
+    public static final RegistryObject<Block> RUBBER_TREE_TRAPDOOR = registerBlock("rubber_tree_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)), ModTab.RR);
     public static final RegistryObject<Block> REINFORCED_CONCRETE = registerBlock("reinforced_concrete",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)), ModTab.RR);
 
@@ -69,7 +99,9 @@ public class BlockInit {
             () -> new SandBlock(9911684, BlockBehaviour.Properties.of(Material.SAND, MaterialColor.COLOR_MAGENTA).strength(0.5F).sound(SoundType.SAND).requiresCorrectToolForDrops()), ModTab.RR);
 
 
-
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);

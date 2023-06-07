@@ -1,5 +1,6 @@
 package me.neo.refinedradiation.init;
 
+import me.neo.refinedradiation.RefinedRadiation;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.TreeFeatures;
@@ -27,7 +28,7 @@ public class ConfiguredFeatureInit {
             RUBBER_TREE = FeatureUtils.register("rubber_tree", Feature.TREE,
             (new TreeConfiguration.TreeConfigurationBuilder
                     (BlockStateProvider.simple(BlockInit.RUBBER_TREE_LOG.get()),
-                            new ForkingTrunkPlacer(5, 2, 2),
+                            new ForkingTrunkPlacer(7, 4, 4),
                             BlockStateProvider.simple(BlockInit.RUBBER_TREE_LEAVES.get()),
                             new AcaciaFoliagePlacer(ConstantInt.of(2),
                                     ConstantInt.of(0)), new TwoLayersFeatureSize(1, 0, 2)

@@ -7,7 +7,11 @@ import me.neo.refinedradiation.custom.item.OutputConfigurationCardItem.OutputCon
 import me.neo.refinedradiation.custom.item.PestleAndMortarItem;
 import me.neo.refinedradiation.custom.item.PotassiumIodinePillItem;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.item.BoatItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,6 +30,11 @@ public class ItemInit {
             new Item(new Item.Properties().tab(ModTab.RR)));
     public static final RegistryObject<Item> IODINE_DUST = ITEMS.register("iodine_dust", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
+
+    public static final RegistryObject<Item> RUBBER_TREE_BOAT = ITEMS.register("rubber_tree_boat", () ->
+            new BoatItem(false, Boat.Type.OAK, (new Item.Properties()).stacksTo(1).tab(ModTab.RR)));
+    public static final RegistryObject<Item> RUBBER_TREE_CHEST_BOAT = ITEMS.register("rubber_tree_chest_boat", () ->
+            new BoatItem(false, Boat.Type.OAK, (new Item.Properties()).stacksTo(1).tab(ModTab.RR)));
 
     public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot", () ->
             new Item(new Item.Properties().tab(ModTab.RR)));
@@ -79,6 +88,10 @@ public class ItemInit {
     public static final RegistryObject<Item> HAZMAT_SUIT_BOOTS = ITEMS.register("hazmat_suit_boots",
             () -> new HazmatSuitArmorItem(ArmorMaterialInit.HAZMAT_SUIT, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModTab.RR)));
+
+    public static final RegistryObject<Item> RUBBER_TREE_SIGN = ITEMS.register("rubber_tree_sign", () ->
+            new SignItem(new Item.Properties().tab(ModTab.RR).stacksTo(16), BlockInit.RUBBER_TREE_STANDING_SIGN.get(),
+                    BlockInit.RUBBER_TREE_WALL_SIGN.get()));
 
 
     public static void register(IEventBus eventBus) {

@@ -17,5 +17,7 @@ public class BlockRenderTypeRegistry {
         ItemBlockRenderTypes.setRenderLayer(BlockInit.CTM_TRANSPARENCY_TEST.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.RUBBER_TREE_LEAVES.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.RUBBER_TREE_SAPLING.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.RUBBER_TREE_DOOR.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.RUBBER_TREE_TRAPDOOR.get(), RenderType.cutout());
     }
 }

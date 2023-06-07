@@ -17,10 +17,20 @@ public class ItemModelGen extends ItemModelProvider {
         withExistingParent("ctm_transparency_test", modLoc("block/ctm_transparency_test"));
         withExistingParent("reinforced_concrete", modLoc("block/reinforced_concrete"));
         withExistingParent("test", modLoc("block/test"));
+
         withExistingParent("rubber_tree_leaves", modLoc("block/rubber_tree_leaves"));
         withExistingParent("rubber_tree_log", modLoc("block/rubber_tree_log"));
         withExistingParent("stripped_rubber_tree_log", modLoc("block/stripped_rubber_tree_log"));
         withExistingParent("rubber_tree_planks", modLoc("block/rubber_tree_planks"));
+        withExistingParent("rubber_tree_trapdoor", modLoc("block/rubber_tree_trapdoor_bottom"));
+        withExistingParent("rubber_tree_wood", modLoc("block/rubber_tree_wood"));
+        withExistingParent("stripped_rubber_tree_wood", modLoc("block/stripped_rubber_tree_wood"));
+        withExistingParent("rubber_tree_fence", modLoc("block/rubber_tree_fence_post"));
+        withExistingParent("rubber_tree_fence_gate", modLoc("block/rubber_tree_fence_gate_open"));
+        withExistingParent("rubber_tree_stairs", modLoc("block/rubber_tree_stairs"));
+        withExistingParent("rubber_tree_slab", modLoc("block/rubber_tree_slab"));
+        withExistingParent("rubber_tree_button", modLoc("block/rubber_tree_button"));
+        withExistingParent("rubber_tree_pressure_plate", modLoc("block/rubber_tree_pressure_plate"));
 
 
         withExistingParent("steel_block", modLoc("block/steel_block"));
@@ -68,6 +78,9 @@ public class ItemModelGen extends ItemModelProvider {
         builder(itemGenerated, "hazmat_suit_chestplate");
         builder(itemGenerated, "hazmat_suit_leggings");
         builder(itemGenerated, "hazmat_suit_boots");
+
+        builder(itemGenerated, "rubber_tree_door");
+        builder(itemGenerated, "rubber_tree_sign");
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {

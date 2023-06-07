@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "refinedradiation:block/rubber_tree_planks",
+    "side": "refinedradiation:block/rubber_tree_planks",
+    "top": "refinedradiation:block/rubber_tree_planks"
+  }
+}

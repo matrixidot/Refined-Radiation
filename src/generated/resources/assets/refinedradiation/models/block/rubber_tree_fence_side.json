@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "refinedradiation:block/rubber_tree_planks"
+  }
+}

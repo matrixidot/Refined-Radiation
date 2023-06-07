@@ -21,6 +21,18 @@ public class LanguageGen extends LanguageProvider {
         add(BlockInit.RUBBER_TREE_LOG.get(), "Rubber Tree Log");
         add(BlockInit.STRIPPED_RUBBER_TREE_LOG.get(), "Stripped Rubber Tree Log");
         add(BlockInit.RUBBER_TREE_PLANKS.get(), "Rubber Tree Planks");
+        add(BlockInit.RUBBER_TREE_TRAPDOOR.get(), "Rubber Tree Trapdoor");
+        add(BlockInit.RUBBER_TREE_DOOR.get(), "Rubber Tree Door");
+        add(BlockInit.RUBBER_TREE_WOOD.get(), "Rubber Tree Wood");
+        add(BlockInit.STRIPPED_RUBBER_TREE_WOOD.get(), "Stripped Rubber Tree Wood");
+        add(BlockInit.RUBBER_TREE_SAPLING.get(), "Rubber Tree Sapling");
+        add(BlockInit.RUBBER_TREE_FENCE.get(), "Rubber Tree Fence");
+        add(BlockInit.RUBBER_TREE_FENCE_GATE.get(), "Rubber Tree Fence Gate");
+        add(BlockInit.RUBBER_TREE_STAIRS.get(), "Rubber Tree Stairs");
+        add(BlockInit.RUBBER_TREE_SLAB.get(), "Rubber Tree Slab");
+        add(BlockInit.RUBBER_TREE_PRESSURE_PLATE.get(), "Rubber Tree Pressure Plate");
+        add(BlockInit.RUBBER_TREE_BUTTON.get(), "Rubber Tree Button");
+        add(ItemInit.RUBBER_TREE_SIGN.get(), "Rubber Tree Sign");
 
         add(BlockInit.STEEL_BLOCK.get(), "Block of Steel");
         add(BlockInit.STEEL_DUST_BLOCK.get(), "Block of Dusted Steel");

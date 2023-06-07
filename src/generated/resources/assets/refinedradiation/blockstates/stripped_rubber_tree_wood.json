@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "refinedradiation:block/stripped_rubber_tree_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "refinedradiation:block/stripped_rubber_tree_wood"
+    },
+    "axis=z": {
+      "model": "refinedradiation:block/stripped_rubber_tree_wood_horizontal",
+      "x": 90
+    }
+  }
+}

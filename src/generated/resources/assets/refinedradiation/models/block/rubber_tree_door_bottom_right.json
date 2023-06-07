@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "refinedradiation:block/rubber_tree_door_bottom",
+    "top": "refinedradiation:block/rubber_tree_door_top"
+  }
+}

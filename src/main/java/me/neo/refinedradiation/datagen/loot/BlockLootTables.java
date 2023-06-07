@@ -4,6 +4,7 @@ import me.neo.refinedradiation.init.BlockInit;
 import me.neo.refinedradiation.init.ItemInit;
 import net.minecraft.data.loot.BlockLoot;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.registries.RegistryObject;
 
 public class BlockLootTables extends BlockLoot {
@@ -40,7 +41,20 @@ public class BlockLootTables extends BlockLoot {
         this.dropSelf(BlockInit.RUBBER_TREE_LEAVES.get());
         this.dropSelf(BlockInit.RUBBER_TREE_LOG.get());
         this.dropSelf(BlockInit.STRIPPED_RUBBER_TREE_LOG.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_WOOD.get());
+        this.dropSelf(BlockInit.STRIPPED_RUBBER_TREE_WOOD.get());
         this.dropSelf(BlockInit.RUBBER_TREE_PLANKS.get());
+        this.add(BlockInit.RUBBER_TREE_DOOR.get(), BlockLoot::createDoorTable);
+        this.dropSelf(BlockInit.RUBBER_TREE_TRAPDOOR.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_SAPLING.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_FENCE.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_FENCE_GATE.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_STAIRS.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_SLAB.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_PRESSURE_PLATE.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_BUTTON.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_STANDING_SIGN.get());
+        this.dropSelf(BlockInit.RUBBER_TREE_WALL_SIGN.get());
     }
 
     @Override

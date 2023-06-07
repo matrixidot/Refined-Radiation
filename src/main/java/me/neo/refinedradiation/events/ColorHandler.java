@@ -27,7 +27,7 @@ public class ColorHandler
     public static void registerBlockColors(RegisterColorHandlersEvent.Block event)
     {
         event.getBlockColors().register((state, world, pos, tintIndex) ->
-                        world != null && pos != null ? BiomeColors.getAverageFoliageColor(world, pos) : FoliageColor.getDefaultColor(),
+                        4940045,
                 BlockInit.RUBBER_TREE_LEAVES.get());
 
     }

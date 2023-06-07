@@ -8,6 +8,9 @@ import me.neo.refinedradiation.init.*;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,6 +59,9 @@ public class RefinedRadiation {
         public static void onClientSetup(FMLClientSetupEvent event) {
             // SCREENS!!!
             MenuScreens.register(MenuInit.TEST.get(), TestScreen::new);
+
+            Sheets.addWoodType(WoodTypesInit.RUBBER_TREE);
+            BlockEntityRenderers.register(TileEntityInit.SIGN_BLOCK_ENTITIES.get(), SignRenderer::new);
 
             event.enqueueWork(() ->
             {
